@@ -1,0 +1,21 @@
+{
+  "name": "fsd",
+  "version": "1.0.0",
+  "description": "None",
+  "main": "None",
+  "repository": {
+    "url": "https://github.com/NickTrunov/FSD",
+    "type": "git"
+  },
+  "author": "Nick Trunov <trunov1997@yandex.ru>",
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "watch": "webpack --watch"
+  }
+}
