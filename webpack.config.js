@@ -1,9 +1,31 @@
-var path = require('path');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const PATHS = {
+  source: path.join(__dirname, 'src'),
+  build: path.join(__dirname, 'build')
+};
 
 module.exports = {
-  entry: './index.js',
+  entry: PATHS.source + '/index.js',
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  }
+      path: PATHS.build,
+      filename: '[name].js'
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+        template: PATHS.source + '/index.pug',
+    })
+],
+module: {
+    rules: [
+        {
+            test: /\.pug$/,
+            loader: 'pug-loader',
+            options: {
+                pretty: true
+            }
+        }
+    ]
+}
 };
