@@ -27,5 +27,8 @@ module: {
             }
         }
     ]
+},
+devServer: {
+    stats: 'errors-only'
 }
 };
