@@ -1,0 +1,33 @@
+@import '../../scss/common.scss';
+
+.type {
+    display: flex;
+
+    &__head {
+        display: inline-block;
+        color: $dark-shade-25;
+        text-align: right;
+        flex-basis: 60px;
+        flex-shrink: 0;
+
+        &--big {
+            font-size: 1.5rem;
+            line-height: 1.2em;
+        }
+
+        &--middle {
+            font-size: 1.1875rem;
+            line-height: 1.21em;
+        }
+
+        &--small {
+            font-size: .75rem;
+            line-height: .8em;
+        }
+    }
+
+    &__body {
+        padding-left: 30px;
+    }
+
+}

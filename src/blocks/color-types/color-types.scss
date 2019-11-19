@@ -1,0 +1,42 @@
+@import '../../scss/sizes.scss';
+
+.color-types {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 144px auto;
+
+    &__pallete {
+        margin: 0 auto;
+    }
+
+    &__types {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 500px;
+        height: 306px;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (min-width: $small-size) {
+    .color-types {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1160px;
+
+        &__pallete {
+            padding: 0 56px;
+            margin: 0;
+        }
+
+        &__types {
+            margin: 0;
+        }
+    }
+
+    
+}
