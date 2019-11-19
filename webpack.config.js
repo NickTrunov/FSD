@@ -2,17 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const PATHS = {
-  source: path.join(__dirname, 'src'),
-  build: path.join(__dirname, 'build')
-};
-
 module.exports = {
-    entry: PATHS.source + '/index.js',
+    entry: {
+            main: './src/js/index.js'},
     output: {
-      path: PATHS.build,
-      filename: '[name].js'
+            path: path.resolve(__dirname, 'build')
     },
+    
     module: {
         rules: [
         {
@@ -34,11 +30,13 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: PATHS.source + '/index.pug',
+            filename: 'index.html',
+			template: './src/index.pug',
         }),
         new MiniCssExtractPlugin('style.css'),
     ],
     devServer: {
-    stats: 'errors-only'
+        contentBase: path.join(__dirname, 'dist'),
+		overlay: true,
     }
 };
