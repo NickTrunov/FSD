@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cards</title>
+  <link href="../css/common.css" rel="stylesheet"><link href="../css/cards.css" rel="stylesheet"></head>
+  <body><img class="cards__logo" src="../img/logo.svg">
+    <div class="cards">
+      <div class="cards__column">
+        <div class="cards__item">
+                    <div class="find-apartments-card">
+                      <div class="card-canvas">
+                        <h1>Найдем номера под ваши пожелания</h1>
+                        <div class="find-apartments-card__item find-apartments-card__item--primary">
+                                          <div class="range-dates">
+                                            <label class="range-dates__label range-dates__label--small">Прибытие<span class="range-dates__wrapper">
+                                                <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="first_date"></span></label>
+                                            <label class="range-dates__label range-dates__label--small">Выезд<span class="range-dates__wrapper">
+                                                <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="second_date"></span></label>
+                                          </div>
+                          <div class="calendar">
+                            <input type="text" id="calendar">
+                          </div>
+                        </div>
+                        <div class="find-apartments-card__item">
+                          <!-- rooms-->
+                          <!-- guests-->
+                                          <div class="configuration-dropdown">
+                                            <div class="configuration-dropdown__label">Гости</div>
+                                            <div class="configuration-dropdown__header" id="guest_header">Сколько гостей</div>
+                                            <div class="configuration-dropdown__content configuration-dropdown__content--hide">
+                                              <div class="configuration-dropdown__item" id="config_guest">
+                                                <div class="configuration-dropdown__option">Взрослые</div>
+                                                <div class="configuration-dropdown__controlls">
+                                                  <div class="configuration-dropdown__button configuration-dropdown__button--disabled" id="guest" data-id="guest" data-type="dec">-</div>
+                                                  <div class="configuration-dropdown__counter" id="guest_field">0</div>
+                                                  <div class="configuration-dropdown__button" data-id="guest" data-type="inc">+</div>
+                                                </div>
+                                              </div>
+                                              <div class="configuration-dropdown__item">
+                                                <div class="configuration-dropdown__option">Дети</div>
+                                                <div class="configuration-dropdown__controlls">
+                                                  <div class="configuration-dropdown__button configuration-dropdown__button--disabled" id="children" data-id="children" data-type="dec">-</div>
+                                                  <div class="configuration-dropdown__counter" id="children_field">0</div>
+                                                  <div class="configuration-dropdown__button" data-id="children" data-type="inc">+</div>
+                                                </div>
+                                              </div>
+                                              <div class="configuration-dropdown__item">
+                                                <div class="configuration-dropdown__option">Младенцы</div>
+                                                <div class="configuration-dropdown__controlls">
+                                                  <div class="configuration-dropdown__button configuration-dropdown__button--disabled" id="baby" data-id="baby" data-type="dec">-</div>
+                                                  <div class="configuration-dropdown__counter" id="baby_field">0</div>
+                                                  <div class="configuration-dropdown__button" data-id="baby" data-type="inc">+</div>
+                                                </div>
+                                              </div>
+                                              <div class="configuration-dropdown__footer">
+                                                <div class="configuration-dropdown__footer-button configuration-dropdown__footer-button--hide">
+                                                  <div class="simple-button simple-button--disabled" id="clear_guest">Очистить</div>
+                                                </div>
+                                                <div class="simple-button" id="apply_guest">Применить</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                        </div>
+                        <div class="find-apartments-card__button">
+                                          <div class="long-button">Подобрать номер<i class="long-button__icon">arrow_forward</i></div>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+        <!-- .cards__item
+        include ../../blocks/register-card/register-card 
+        +register-card()
+        -->
+      </div>
+      <!-- .cards__column
+      .cards__item
+        include ../../blocks/booking-card/booking-card 
+        +booking-card()
+      .cards__item
+        include ../../blocks/enter-card/enter-card 
+        +enter-card()
+      -->
+      <!-- .cards__column
+      .cards__item
+        #static_calendar
+      .cards__item
+        include ../../blocks/image-card/image-card 
+        +image-card({
+          image: '../img/apartments_1.png',
+          arrows: true,
+          position: 888,
+          lux: true,
+          price: '9 990',
+          rating: 5,
+          comments: 145
+        })
+      .cards__item
+        +image-card({
+          image: '../img/apartments_2.png',
+          arrows: false,
+          position: 840,
+          lux: false,
+          price: '9 990',
+          rating: 4,
+          comments: 65
+        })
+      -->
+    </div>
+  <script type="text/javascript" src="../common.js"></script><script type="text/javascript" src="../cards.js"></script></body>
+</html>

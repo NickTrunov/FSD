@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title Cards
+  body
+    img.cards__logo(src="../img/logo.svg")
+    .cards
+      .cards__column
+        .cards__item
+          include ../../blocks/find-apartments-card/find-apartments-card
+          +apartments()
+        // .cards__item
+          include ../../blocks/register-card/register-card 
+          +register-card()
+      // .cards__column
+        .cards__item
+          include ../../blocks/booking-card/booking-card 
+          +booking-card()
+        .cards__item
+          include ../../blocks/enter-card/enter-card 
+          +enter-card()
+      // .cards__column
+        .cards__item
+          #static_calendar
+        .cards__item
+          include ../../blocks/image-card/image-card 
+          +image-card({
+            image: '../img/apartments_1.png',
+            arrows: true,
+            position: 888,
+            lux: true,
+            price: '9 990',
+            rating: 5,
+            comments: 145
+          })
+        .cards__item
+          +image-card({
+            image: '../img/apartments_2.png',
+            arrows: false,
+            position: 840,
+            lux: false,
+            price: '9 990',
+            rating: 4,
+            comments: 65
+          })

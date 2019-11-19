@@ -8,6 +8,7 @@ module.exports = {
     entry: {
         common: './src/scss/common.scss',    
         colorsType: './src/pages/colors-type/colors-type.js',
+        cards: './src/pages/cards/cards.js',
     },
     output: {
             path: path.resolve(__dirname, 'build')
@@ -29,9 +30,20 @@ module.exports = {
                 'css-loader?url=false',
                 'sass-loader'
             ]
-        }
+        },
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['@babel/preset-env']
+                }
+            }
+        },
         ]
     },
+
     plugins: [
         new HtmlWebpackPlugin({
 			filename: 'index.html',
@@ -44,6 +56,12 @@ module.exports = {
 			template: './src/pages/colors-type/colors-type.pug',
 			chunks: ['common', 'colorsType']
         }),
+
+        new HtmlWebpackPlugin({
+			filename: 'pages/cards.html',
+			template: './src/pages/cards/cards.pug',
+			chunks: ['common', 'cards']
+		}),
         
         new MiniCssExtractPlugin({
 			filename: 'css/[name].css',
@@ -58,8 +76,13 @@ module.exports = {
 			{
 				from: './src/fonts',
 				to: './fonts'
-			}
-		]),
+            },
+        ]),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        }),
     ],
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
