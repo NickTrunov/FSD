@@ -6,8 +6,10 @@
     &__label {
         text-transform: uppercase;
         font-family: 'Montserrat Bold';
-        font-size: .75rem;
+        font-size: 12px;
+        line-height: 15px;
         color: $dark-shade-100;
+        padding-bottom: 5px;
     }
 
     &__header {
@@ -16,7 +18,7 @@
         line-height: 1.715em;
         padding: .57em 0 .715em 1em;
         border: 1px solid $dark-shade-25;
-        border-radius: .14em .14em 0 0;
+        border-radius: 4px;
         user-select: none;
         cursor: pointer;
 
@@ -27,7 +29,11 @@
             position: absolute;
             right: 9px;
             top: 10px;
-            color: $dark-shade-75;
+            color: $dark-shade-50;
+        }
+
+        &:hover, &:focus {
+            border-color: $dark-shade-50;
         }
 
     }
@@ -39,7 +45,7 @@
         left: 0;
         right: 0;
         border: 1px solid $dark-shade-25;
-        border-radius: .14em;
+        border-radius: 4px;
         border-top: none;
         padding-bottom: 6px;
 

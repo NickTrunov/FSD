@@ -11,7 +11,7 @@
         line-height: 15px;
         text-transform: uppercase;
         color: $dark-shade-100;
-
+        
         &--small {
             width: 150px;
         }
@@ -38,7 +38,8 @@
     }
 
     &__date-dropdown {
-        color: $dark-shade-25;
+        font-family: 'Montserrat';
+        color: $dark-shade-75;
         border: 1px solid $dark-shade-25;
         border-radius: 4px;
         font-size: .875rem;
@@ -49,16 +50,11 @@
         width: 100%;
 
         &::placeholder {
-            color: $dark-shade-25;
+            color: $dark-shade-75;
+        
         }
-
         &:hover, &:focus {
             border-color: $dark-shade-50;
-            color: $dark-shade-75;
-
-            &::placeholder {
-                color: $dark-shade-75;
-            }
         }
     }
 }

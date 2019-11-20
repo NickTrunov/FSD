@@ -17,7 +17,7 @@ mixin register-card()
             input.text-field(placeholder="Пароль").register-card__item
             include ../toggle/toggle
             +toggle('Получать спецпредложения')
-          .register-card__block
+          .register-card__block.register-card__block--button
             include ../long-button/long-button
             +long-button('Перейти к оплате')
           .register-card__block.register-card__block--last

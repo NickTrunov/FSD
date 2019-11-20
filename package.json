@@ -34,7 +34,7 @@
     "webpack-dev-server": "^3.9.0"
   },
   "scripts": {
-    "build": "webpack -p",
+    "b": "webpack -p",
     "watch": "webpack --watch",
     "start": "webpack-dev-server",
     "serv": "static build"
