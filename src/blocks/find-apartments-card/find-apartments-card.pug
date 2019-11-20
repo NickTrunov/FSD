@@ -3,7 +3,7 @@ mixin apartments()
         .card-canvas
           h1 Найдем номера под ваши пожелания
           .find-apartments-card__item.find-apartments-card__item--primary
-            include ../range-dates/range-dates.pug
+            include ../range-dates/range-dates
             +range-dates({
               firstLabel: 'Прибытие',
               secondLabel: 'Выезд',
@@ -13,8 +13,8 @@ mixin apartments()
             .calendar
               input(type="text")#calendar
           .find-apartments-card__item
-            include ../configuration-dropdown/configuration-dropdown.pug
+            include ../configuration-dropdown/configuration-dropdown
             +guest-dropdown()
           .find-apartments-card__button
-            include ../long-button/long-button.pug
+            include ../long-button/long-button
             +long-button('Подобрать номер')

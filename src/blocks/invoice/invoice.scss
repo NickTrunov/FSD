@@ -1,0 +1,57 @@
+@import '../../scss/colors.scss';
+
+.invoice {
+    line-height: 24px;
+    margin-top: -3px;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        &:nth-child(3) {
+            line-height: 18px;
+            padding-top: 3px;
+            padding-bottom: 15px;
+        }
+
+        &--total {
+            font-family: 'Quicksand Bold';
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__line {
+        position: relative;
+        bottom: 5px;
+        border-bottom: 1px dashed $dark-shade-25;
+        width: 57%;
+    }
+
+    &__block {
+        display: table-cell;
+    }
+
+    &__service {
+        position: relative;
+        padding-right: 24px;
+        width: 80%;
+
+        &--info::after {
+            content: 'i';
+            position: absolute;
+            top: 0;
+            right: 17px;
+            font-family: 'Montserrat Bold';
+            color: $dark-shade-25;
+            border: 1px solid $dark-shade-25;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+}

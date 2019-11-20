@@ -111,14 +111,99 @@
                     </div>
         </div>
       </div>
-      <!-- .cards__column
-      .cards__item
-        include ../../blocks/booking-card/booking-card 
-        +booking-card()
-      .cards__item
+      <div class="cards__column">
+        <div class="cards__item">
+                    <div class="booking-card">
+                      <div class="card-canvas">
+                        <div class="booking-card__header">
+                                          <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                            <h1 class="apartment-info--main">888</h1><span class="apartment-info--lux"> Люкс</span>
+                                          </div>
+                                          <div class="price"><span class="price--bold">9 990&#8381; </span><span class="price--small">в сутки</span></div>
+                        </div>
+                        <div class="booking-card__item booking-card__item--up">
+                                          <div class="range-dates">
+                                            <label class="range-dates__label range-dates__label--small">Прибытие<span class="range-dates__wrapper">
+                                                <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="first_booking_date"></span></label>
+                                            <label class="range-dates__label range-dates__label--small">Выезд<span class="range-dates__wrapper">
+                                                <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="second_booking_date"></span></label>
+                                          </div>
+                          <div class="calendar">
+                            <input type="text" id="booking_calendar">
+                          </div>
+                        </div>
+                        <div class="booking-card__item booking-card__item--middle">
+                          <!-- rooms-->
+                          <!-- guests-->
+                                          <div class="configuration-dropdown">
+                                            <div class="configuration-dropdown__label">Гости</div>
+                                            <div class="configuration-dropdown__header" id="guest_header">Сколько гостей</div>
+                                            <div class="configuration-dropdown__content configuration-dropdown__content--hide">
+                                              <div class="configuration-dropdown__item" id="config_guest">
+                                                <div class="configuration-dropdown__option">Взрослые</div>
+                                                <div class="configuration-dropdown__controlls">
+                                                  <div class="configuration-dropdown__button configuration-dropdown__button--disabled" id="guest" data-id="guest" data-type="dec">-</div>
+                                                  <div class="configuration-dropdown__counter" id="guest_field">0</div>
+                                                  <div class="configuration-dropdown__button" data-id="guest" data-type="inc">+</div>
+                                                </div>
+                                              </div>
+                                              <div class="configuration-dropdown__item">
+                                                <div class="configuration-dropdown__option">Дети</div>
+                                                <div class="configuration-dropdown__controlls">
+                                                  <div class="configuration-dropdown__button configuration-dropdown__button--disabled" id="children" data-id="children" data-type="dec">-</div>
+                                                  <div class="configuration-dropdown__counter" id="children_field">0</div>
+                                                  <div class="configuration-dropdown__button" data-id="children" data-type="inc">+</div>
+                                                </div>
+                                              </div>
+                                              <div class="configuration-dropdown__item">
+                                                <div class="configuration-dropdown__option">Младенцы</div>
+                                                <div class="configuration-dropdown__controlls">
+                                                  <div class="configuration-dropdown__button configuration-dropdown__button--disabled" id="baby" data-id="baby" data-type="dec">-</div>
+                                                  <div class="configuration-dropdown__counter" id="baby_field">0</div>
+                                                  <div class="configuration-dropdown__button" data-id="baby" data-type="inc">+</div>
+                                                </div>
+                                              </div>
+                                              <div class="configuration-dropdown__footer">
+                                                <div class="configuration-dropdown__footer-button configuration-dropdown__footer-button--hide">
+                                                  <div class="simple-button simple-button--disabled" id="clear_guest">Очистить</div>
+                                                </div>
+                                                <div class="simple-button" id="apply_guest">Применить</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                        </div>
+                        <div class="booking-card__item"> 
+                                          <div class="invoice">
+                                            <div class="invoice__row">
+                                              <div class="invoice__service">9 990&#8381; х 4 суток</div>
+                                              <div>39 960&#8381;</div>
+                                            </div>
+                                            <div class="invoice__row">
+                                              <div class="invoice__service invoice__service--info">Сбор за услуги: скидка 2 179&#8381;</div>
+                                              <div>0&#8381;</div>
+                                            </div>
+                                            <div class="invoice__row">
+                                              <div class="invoice__service invoice__service--info">Сбор за дополнительные услуги</div>
+                                              <div>300&#8381;</div>
+                                            </div>
+                                            <div class="invoice__row invoice__row--total">
+                                              <h2 class="invoice__block">Итого</h2>
+                                              <div class="invoice__line"></div>
+                                              <h2 class="invoice__block">38 081&#8381;</h2>
+                                            </div>
+                                          </div>
+                        </div>
+                        <div class="booking-card__item--last"> 
+                          <div class="long-button">Забронировать<i class="long-button__icon">arrow_forward</i></div>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+        <!-- .cards__item
         include ../../blocks/enter-card/enter-card 
         +enter-card()
-      -->
+        -->
+      </div>
       <div class="cards__column">
         <div class="cards__item">
           <div id="static_calendar"></div>
