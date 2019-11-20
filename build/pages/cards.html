@@ -67,10 +67,48 @@
                       </div>
                     </div>
         </div>
-        <!-- .cards__item
-        include ../../blocks/register-card/register-card 
-        +register-card()
-        -->
+        <div class="cards__item">
+                    <div class="register-card">
+                      <div class="card-canvas">
+                        <h1>Регистрация аккаунта</h1>
+                        <div class="register-card__block">
+                          <input class="text-field register-card__item" placeholder="Имя">
+                          <input class="text-field register-card__item" placeholder="Фамилия">
+                                          <label class="radio">Мужчина
+                                            <input class="radio__input" type="radio" name="gender" checked>
+                                            <div class="radio__mark"></div>
+                                          </label>
+                                          <label class="radio">Женщина
+                                            <input class="radio__input" type="radio" name="gender">
+                                            <div class="radio__mark"></div>
+                                          </label>
+                        </div>
+                        <div class="register-card__block">
+                          <h3 class="register-card__label">Дата рождения</h3>
+                          <input class="text-field" placeholder="ДД.ММ.ГГГГ" id="birthday">
+                        </div>
+                        <div class="register-card__block">
+                          <h3 class="register-card__label">Данные для входа в сервис</h3>
+                          <input class="text-field register-card__item" placeholder="Email">
+                          <input class="text-field register-card__item" placeholder="Пароль">
+                                          <label class="toggle">Получать спецпредложения
+                                            <input class="toggle__input" type="checkbox">
+                                            <div class="mark toggle__mark"></div>
+                                          </label>
+                        </div>
+                        <div class="register-card__block">
+                                          <div class="long-button">Перейти к оплате<i class="long-button__icon">arrow_forward</i></div>
+                        </div>
+                        <div class="register-card__block register-card__block--last">
+                                          <div class="card-footer">
+                                            <div class="card-footer__left">Уже есть аккаунт на Toxin</div>
+                                            <div class="card-footer__right"></div>
+                                            <div class="rounded-button">Войти</div>
+                                          </div>
+                        </div>
+                      </div>
+                    </div>
+        </div>
       </div>
       <!-- .cards__column
       .cards__item
@@ -80,10 +118,12 @@
         include ../../blocks/enter-card/enter-card 
         +enter-card()
       -->
-      <!-- .cards__column
-      .cards__item
-        #static_calendar
-      .cards__item
+      <div class="cards__column">
+        <div class="cards__item">
+          <div id="static_calendar"></div>
+        </div>
+      </div>
+      <!--  .cards__item
         include ../../blocks/image-card/image-card 
         +image-card({
           image: '../img/apartments_1.png',

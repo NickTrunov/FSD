@@ -9,7 +9,7 @@ html
         .cards__item
           include ../../blocks/find-apartments-card/find-apartments-card
           +apartments()
-        // .cards__item
+        .cards__item
           include ../../blocks/register-card/register-card 
           +register-card()
       // .cards__column
@@ -19,10 +19,10 @@ html
         .cards__item
           include ../../blocks/enter-card/enter-card 
           +enter-card()
-      // .cards__column
+      .cards__column
         .cards__item
           #static_calendar
-        .cards__item
+      //  .cards__item
           include ../../blocks/image-card/image-card 
           +image-card({
             image: '../img/apartments_1.png',
