@@ -23,6 +23,7 @@
       url("../fonts/quicksand-bold/Quicksand-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
+    unicode-range: U+0000-007F;
   }
   
   @font-face {
@@ -45,3 +46,14 @@
       url('../fonts/material_icons/MaterialIcons-Regular.ttf') format('opentype'),
       url('../fonts/material_icons/MaterialIcons-Regular.svg') format('svg');
   }
+
+  @font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/opensans-bold/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/opensans-bold/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/opensans-bold/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/opensans-bold/OpenSans-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    unicode-range: U+0400-052F, U+2DE0-2DFF, U+A640-A69F;
+}
