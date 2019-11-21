@@ -4,6 +4,7 @@
     display: inline-block;
     position: relative;
     right: 2px;
+    font-family: 'Montserrat Bold';
     color: $purple;
     border-radius: 22px;
     width: 95px;
@@ -12,7 +13,6 @@
     text-transform: uppercase;
     font-size: .75rem;
     line-height: 24px;
-    font-weight: bold;
     cursor: pointer;
     user-select: none;
     background-color: $white;
