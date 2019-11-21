@@ -4,6 +4,6 @@ import Calendar from '../../blocks/calendar/static-calendar';
 import '../../blocks/register-card/register-card';
 import '../../blocks/booking-card/booking-card';
 import '../../blocks/enter-card/enter-card';
-// import '../../blocks/image-card/image-card';
+import '../../blocks/image-card/image-card';
 
 Calendar('static_calendar')
