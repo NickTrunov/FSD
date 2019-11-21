@@ -34,3 +34,5 @@ body{background-color:#F4F4F6}.cards{max-width:86%;margin:150px auto;display:fle
 
 .invoice{line-height:24px;margin-top:-3px}.invoice__row{display:flex;justify-content:space-between;margin-bottom:10px}.invoice__row:nth-child(3){line-height:18px;padding-top:3px;padding-bottom:15px}.invoice__row--total{font-family:'Quicksand Bold';margin-top:16px;margin-bottom:0}.invoice__line{position:relative;bottom:5px;border-bottom:1px dashed rgba(31,32,65,0.25);width:57%}.invoice__block{display:table-cell}.invoice__service{position:relative;padding-right:24px;width:80%}.invoice__service--info::after{content:'i';position:absolute;top:0;right:17px;font-family:'Montserrat Bold';color:rgba(31,32,65,0.25);border:1px solid rgba(31,32,65,0.25);border-radius:50%;width:20px;height:20px;line-height:20px;text-align:center}
 
+.enter-card{width:380px;padding-top:10px}.enter-card__title{margin-bottom:20px}.enter-card__field{margin-bottom:10px}.enter-card__enter-button{margin-top:20px}.enter-card__account{display:flex;justify-content:space-between;align-items:baseline;padding-top:30px}.enter-card__footer{margin-top:32px;margin-bottom:2px}
+

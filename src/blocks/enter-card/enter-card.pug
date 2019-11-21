@@ -1,0 +1,12 @@
+mixin enter-card()  
+  .enter-card
+    .card-canvas
+      h1.enter-card__title Войти
+      input.text-field.enter-card__field(type="text" placeholder="Email")
+      input.text-field(type="password" placeholder="Пароль")
+      .long-button.enter-card__enter-button Войти
+        i.long-button__icon arrow_forward
+      
+      .enter-card__footer
+        include ../card-footer/card-footer.pug 
+        +card-footer('Нет аккаунта на Toxin?', 'Создать')
