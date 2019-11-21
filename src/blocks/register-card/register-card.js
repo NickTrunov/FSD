@@ -4,3 +4,6 @@ import '../text-field/text-field';
 import '../long-button/long-button';
 import '../toggle/toggle';
 import '../card-footer/card-footer';
+import 'jquery.maskedinput/src/jquery.maskedinput';
+
+$('#date').mask('99.99.9999');
