@@ -9,6 +9,7 @@ module.exports = {
         common: './src/scss/common.scss',    
         colorsType: './src/pages/colors-type/colors-type.js',
         cards: './src/pages/cards/cards.js',
+        formElements: './src/pages/form-elements/form-elements.js',
     },
     output: {
             path: path.resolve(__dirname, 'build')
@@ -61,6 +62,12 @@ module.exports = {
 			filename: 'pages/cards.html',
 			template: './src/pages/cards/cards.pug',
 			chunks: ['common', 'cards']
+        }),
+        
+        new HtmlWebpackPlugin({
+			filename: 'pages/form-elements.html',
+			template: './src/pages/form-elements/form-elements.pug',
+			chunks: ['common', 'formElements']
 		}),
         
         new MiniCssExtractPlugin({
