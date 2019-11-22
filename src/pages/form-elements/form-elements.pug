@@ -5,7 +5,7 @@ html
   body
     img.logo(src="../img/logo.svg")
     .form-elements
-      .form-elements__left 
+      .form-elements__top-left
         .form-elements__item
           .form-elements__head
             .form-elements__title Text field
@@ -29,41 +29,113 @@ html
           input#birthday.text-field(placeholder='ДД.ММ.ГГГГ')
 
         include ../../blocks/range-dates/range-dates
-        .form-elements__item.form-elements__item--big-space
+        .form-elements__item
           +range-dates({
             firstLabel: 'Date dropdown',
             secondLabel: 'Date dropdown'
           })
             
 
-        .form-elements__item.form-elements__item--big-space.form-elements__small-container
+        .form-elements__item
           +date-dropdown({
             label: 'Filter date dropdown',
             date: '19 авг - 23 авг'
           })
 
-        .form-elements__item.form-elements__item--big-space.form-elements__small-container
+        .form-elements__item
           .form-elements__head
             .form-elements__title Subscription text field 
           include ../../blocks/subscription/subscription 
           +subscription({ placeholder: 'Email' })
+      
+      .form-elements__top-mid
+        .form-elements__item
+          .form-elements__head
+            .form-elements__title Checkbox buttons 
+          include ../../blocks/checkbox/checkbox 
+          +checkbox('Можно курить')
+          +checkbox('Можно с питомцами', true)
+          +checkbox('Можно пригласить гостей (до 10 человек)', true)
 
+        .form-elements__item
+          .form-elements__head
+            .form-elements__title Radio buttons 
+          include ../../blocks/radio/radio 
+          +radio('Мужчина', 'gender', true)
+          +radio('Женщина', 'gender', false)
 
-        .form-elements__item.form-elements__item--big-space.form-elements__small-container
+        .form-elements__item
+          .form-elements__head
+            .form-elements__title Toggle
+          include ../../blocks/toggle/toggle 
+          .form-elements__item
+            +toggle('Получать спецпредложения', true) 
+          .form-elements__item
+            +toggle('Получать спецпредложения') 
+
+        .form-elements__item
+          .form-elements__head
+            .form-elements__title Like button
+          include ../../blocks/like/like
+          span.form-elements__like
+            +like({
+                likes: 2,
+                liked: false
+            })
+        
+          +like({
+              likes: 12,
+              liked: true
+          })
+
+        .form-elements__item
+          .form-elements__head
+            .form-elements__title Rate button
+          include ../../blocks/rating/rating 
+          span.form-elements__inline
+            +rating(4)
+            .form-elements__rating
+            +rating(5)
+            
+      .form-elements__top-right
+        .form-elements__item
+          .form-elements__head
+            .form-elements__title Range slider
+            // add slider
+        .form-elements__item
+          .form-elements__head
+            .form-elements__title Buttons
+          .form-elements__buttons
+            .button.form-elements__btn Click me 
+            .button.button--disabled.form-elements__btn Click me 
+            .rounded-button.form-elements__btn--big.form-elements__btn Click me
+            .rounded-button.rounded-button--disabled.form-elements__btn--big.form-elements__btn Click me
+            .simple-button.form-elements__btn Click me
+            .simple-button.simple-button--disabled.form-elements__btn Click me
+            include ../../blocks/long-button/long-button 
+            +long-button('Перейти к оплате')
+
+        .form-elements__item
+          .form-elements__head
+            .form-elements__title Pagination 
+          include ../../blocks/pagination/pagination 
+          +pagination()
+
+      .form-elements__mid-left
+        .form-elements__item
           .form-elements__head
             .form-elements__title Dropdown 
             .form-elements__desc Default
           #dd
 
-
-        .form-elements__item.form-elements__item--big-space.form-elements__small-container
+        .form-elements__item
           .form-elements__head
             .form-elements__title Dropdown 
             .form-elements__desc Default
-          #dd2
+          #dd2      
 
         include ../../blocks/expander/expander 
-        .form-elements__item.form-elements__top-margin
+        .form-elements__item
           +expander({
               title: 'Expandable checkbox list',
               list: [
@@ -86,68 +158,7 @@ html
               ]
           })
 
-        .form-elements__item
-          include ../../blocks/additions/additions 
-          +additions({
-              title: 'Комфорт',
-              desc: 'Шумопоглощающие стены',
-              icon: 'tag_faces'
-          })
-          +additions({
-              title: 'Удобство',
-              desc: 'Окно в каждой из спален',
-              icon: 'location_city'
-          })
-
-      .form-elements__mid 
-        .form-elements__item.form-elements__item--big-space
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Checkbox buttons 
-          include ../../blocks/checkbox/checkbox 
-          +checkbox('Можно курить')
-          +checkbox('Можно с питомцами', true)
-          +checkbox('Можно пригралисть гостей (до 10 человек)', true)
-
-        .form-elements__item.form-elements__item--big-space
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Radio buttons 
-          include ../../blocks/radio/radio 
-          +radio('Мужчина', 'gender', true)
-          +radio('Женщина', 'gender', false)
-
-        .form-elements__item.form-elements__item--big-space
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Toggle
-          include ../../blocks/toggle/toggle 
-          .form-elements__item--sub
-            +toggle('Получать спецпредложения', true) 
-          .form-elements__item--sub
-            +toggle('Получать спецпредложения') 
-
-        .form-elements__item.form-elements__item--big-space
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Like button
-          include ../../blocks/like/like
-          span.form-elements__like
-            +like({
-                likes: 2,
-                liked: false
-            })
-        
-          +like({
-              likes: 12,
-              liked: true
-          })
-
-        .form-elements__item
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Rate button
-          include ../../blocks/rating/rating 
-          span.form-elements__inline
-            +rating(4)
-            .form-elements__rating
-              +rating(5)
-
+      .form-elements__mid-mid
         .form-elements__item
           .form-elements__head.form-elements__head--accent
             .form-elements__title Dropdown 
@@ -166,32 +177,8 @@ html
               desc: 'На 1 этаже вас встретит специалист и проводит до номера.'
             },
           ])
-
-      .form-elements__right 
-
-        .form-elements__item
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Range slider
-            // add slider
-        .form-elements__item
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Buttons
-          .form-elements__buttons
-            .button.form-elements__btn Click me 
-            .button.button--disabled.form-elements__btn Click me 
-            .rounded-button.form-elements__btn--big.form-elements__btn Click me
-            .rounded-button.rounded-button--disabled.form-elements__btn--big.form-elements__btn Click me
-            .simple-button.form-elements__btn Click me
-            .simple-button.simple-button--disabled.form-elements__btn Click me
-            include ../../blocks/long-button/long-button 
-            +long-button('Перейти к оплате')
-
-        .form-elements__item
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Pagination 
-          include ../../blocks/pagination/pagination 
-          +pagination()  
-
+     
+      .form-elements__mid-right
         .form-elements__item
           .form-elements__head.form-elements__head--accent
             .form-elements__title Dropdown 
@@ -206,8 +193,22 @@ html
             'Без вечеринок и мероприятий',
             'Время прибытия — после 13:00, а выезд до 12:00'
           ])
+
+      .form-elements__bot-left
+        .form-elements__item
+          include ../../blocks/additions/additions 
+          +additions({
+              title: 'Комфорт',
+              desc: 'Шумопоглощающие стены',
+              icon: 'tag_faces'
+          })
+          +additions({
+              title: 'Удобство',
+              desc: 'Окно в каждой из спален',
+              icon: 'location_city'
+          })
       
-      .form-elements__bot 
+      .form-elements__bot-mid
         include ../../blocks/comment/comment 
         +comment({
             image: '../img/profile-pic_1.jpg',
@@ -220,7 +221,7 @@ html
             }
         })
 
-      .form-elements__item
+//      .form-elements__item
         #dr
       .form-elements__item
         #dr2

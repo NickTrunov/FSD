@@ -5,7 +5,7 @@
   <link href="../css/common.css" rel="stylesheet"><link href="../css/formElements.css" rel="stylesheet"></head>
   <body><img class="logo" src="../img/logo.svg">
     <div class="form-elements">
-      <div class="form-elements__left"> 
+      <div class="form-elements__top-left">
         <div class="form-elements__item">
           <div class="form-elements__head">
             <div class="form-elements__title">Text field</div>
@@ -70,7 +70,7 @@
           </div>
           <input class="text-field" id="birthday" placeholder="ДД.ММ.ГГГГ">
         </div>
-        <div class="form-elements__item form-elements__item--big-space">
+        <div class="form-elements__item">
                   <div class="range-dates">
                     <label class="range-dates__label range-dates__label--small">Date dropdown<span class="range-dates__wrapper">
                         <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ"></span></label>
@@ -78,13 +78,13 @@
                         <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ"></span></label>
                   </div>
         </div>
-        <div class="form-elements__item form-elements__item--big-space form-elements__small-container">
+        <div class="form-elements__item">
                   <div class="range-dates">
                     <label class="range-dates__label">Filter date dropdown<span class="range-dates__wrapper">
                         <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" value="19 авг - 23 авг"></span></label>
                   </div>
         </div>
-        <div class="form-elements__item form-elements__item--big-space form-elements__small-container">
+        <div class="form-elements__item">
           <div class="form-elements__head">
             <div class="form-elements__title">Subscription text field </div>
           </div>
@@ -93,21 +93,121 @@
                       <input class="text-field" placeholder="Email">
                     </div>
         </div>
-        <div class="form-elements__item form-elements__item--big-space form-elements__small-container">
+      </div>
+      <div class="form-elements__top-mid">
+        <div class="form-elements__item">
+          <div class="form-elements__head">
+            <div class="form-elements__title">Checkbox buttons </div>
+          </div>
+                    <label class="checkbox">Можно курить
+                      <input class="checkbox__input" type="checkbox">
+                      <div class="checkbox__mark"></div>
+                    </label>
+                    <label class="checkbox">Можно с питомцами
+                      <input class="checkbox__input" type="checkbox" checked>
+                      <div class="checkbox__mark"></div>
+                    </label>
+                    <label class="checkbox">Можно пригласить гостей (до 10 человек)
+                      <input class="checkbox__input" type="checkbox" checked>
+                      <div class="checkbox__mark"></div>
+                    </label>
+        </div>
+        <div class="form-elements__item">
+          <div class="form-elements__head">
+            <div class="form-elements__title">Radio buttons </div>
+          </div>
+                    <label class="radio">Мужчина
+                      <input class="radio__input" type="radio" name="gender" checked>
+                      <div class="radio__mark"></div>
+                    </label>
+                    <label class="radio">Женщина
+                      <input class="radio__input" type="radio" name="gender">
+                      <div class="radio__mark"></div>
+                    </label>
+        </div>
+        <div class="form-elements__item">
+          <div class="form-elements__head">
+            <div class="form-elements__title">Toggle</div>
+          </div>
+          <div class="form-elements__item">
+                      <label class="toggle">Получать спецпредложения
+                        <input class="toggle__input" type="checkbox" checked>
+                        <div class="mark toggle__mark"></div>
+                      </label>
+          </div>
+          <div class="form-elements__item">
+                      <label class="toggle">Получать спецпредложения
+                        <input class="toggle__input" type="checkbox">
+                        <div class="mark toggle__mark"></div>
+                      </label>
+          </div>
+        </div>
+        <div class="form-elements__item">
+          <div class="form-elements__head">
+            <div class="form-elements__title">Like button</div>
+          </div><span class="form-elements__like">
+                      <div class="like">2<i class="like__icon">favorite_border</i></div></span>
+                    <div class="like like--liked">12<i class="like__icon like__icon--liked">favorite</i></div>
+        </div>
+        <div class="form-elements__item">
+          <div class="form-elements__head">
+            <div class="form-elements__title">Rate button</div>
+          </div><span class="form-elements__inline">
+                      <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i>
+                      </div>
+            <div class="form-elements__rating"></div>
+                      <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i>
+                      </div></span>
+        </div>
+      </div>
+      <div class="form-elements__top-right">
+        <div class="form-elements__item">
+          <div class="form-elements__head">
+            <div class="form-elements__title">Range slider</div>
+            <!-- add slider-->
+          </div>
+        </div>
+        <div class="form-elements__item">
+          <div class="form-elements__head">
+            <div class="form-elements__title">Buttons</div>
+          </div>
+          <div class="form-elements__buttons">
+            <div class="button form-elements__btn">Click me </div>
+            <div class="button button--disabled form-elements__btn">Click me </div>
+            <div class="rounded-button form-elements__btn--big form-elements__btn">Click me</div>
+            <div class="rounded-button rounded-button--disabled form-elements__btn--big form-elements__btn">Click me</div>
+            <div class="simple-button form-elements__btn">Click me</div>
+            <div class="simple-button simple-button--disabled form-elements__btn">Click me</div>
+                        <div class="long-button">Перейти к оплате<i class="long-button__icon">arrow_forward</i></div>
+          </div>
+        </div>
+        <div class="form-elements__item">
+          <div class="form-elements__head">
+            <div class="form-elements__title">Pagination </div>
+          </div>
+                    <div class="pagination"><a class="pagination__item pagination__item--active" href="#">1</a><a class="pagination__item" href="#">2</a><a class="pagination__item" href="#">3</a>
+                      <div class="pagination__item">...</div><a class="pagination__item" href="#">15</a>
+                      <button class="pagination__next"></button>
+                      <div class="pagination__info">1 &ndash; 12 из 100+ вариантов аренды</div>
+                    </div>
+        </div>
+      </div>
+      <div class="form-elements__mid-left">
+        <div class="form-elements__item">
           <div class="form-elements__head">
             <div class="form-elements__title">Dropdown </div>
             <div class="form-elements__desc">Default</div>
           </div>
           <div id="dd"></div>
         </div>
-        <div class="form-elements__item form-elements__item--big-space form-elements__small-container">
+        <div class="form-elements__item">
           <div class="form-elements__head">
             <div class="form-elements__title">Dropdown </div>
             <div class="form-elements__desc">Default</div>
           </div>
-          <div id="dd2"></div>
+          <div id="dd2">     </div>
         </div>
-        <div class="form-elements__item form-elements__top-margin">
+        <div class="form-elements__item">
                   <div class="expander">
                     <div class="expander__header" id="expander-header">Expandable checkbox list</div>
                     <div class="expander__list expander__list--hide" id="expander-list">
@@ -157,83 +257,8 @@
                     </div>
                   </div>
         </div>
-        <div class="form-elements__item">
-                    <div class="additions">
-                      <div class="additions__title">Комфорт</div>
-                      <div>Шумопоглощающие стены</div><i class="material-icons additions__icon">tag_faces</i>
-                    </div>
-                    <div class="additions">
-                      <div class="additions__title">Удобство</div>
-                      <div>Окно в каждой из спален</div><i class="material-icons additions__icon">location_city</i>
-                    </div>
-        </div>
       </div>
-      <div class="form-elements__mid"> 
-        <div class="form-elements__item form-elements__item--big-space">
-          <div class="form-elements__head form-elements__head--accent">
-            <div class="form-elements__title">Checkbox buttons </div>
-          </div>
-                    <label class="checkbox">Можно курить
-                      <input class="checkbox__input" type="checkbox">
-                      <div class="checkbox__mark"></div>
-                    </label>
-                    <label class="checkbox">Можно с питомцами
-                      <input class="checkbox__input" type="checkbox" checked>
-                      <div class="checkbox__mark"></div>
-                    </label>
-                    <label class="checkbox">Можно пригралисть гостей (до 10 человек)
-                      <input class="checkbox__input" type="checkbox" checked>
-                      <div class="checkbox__mark"></div>
-                    </label>
-        </div>
-        <div class="form-elements__item form-elements__item--big-space">
-          <div class="form-elements__head form-elements__head--accent">
-            <div class="form-elements__title">Radio buttons </div>
-          </div>
-                    <label class="radio">Мужчина
-                      <input class="radio__input" type="radio" name="gender" checked>
-                      <div class="radio__mark"></div>
-                    </label>
-                    <label class="radio">Женщина
-                      <input class="radio__input" type="radio" name="gender">
-                      <div class="radio__mark"></div>
-                    </label>
-        </div>
-        <div class="form-elements__item form-elements__item--big-space">
-          <div class="form-elements__head form-elements__head--accent">
-            <div class="form-elements__title">Toggle</div>
-          </div>
-          <div class="form-elements__item--sub">
-                      <label class="toggle">Получать спецпредложения
-                        <input class="toggle__input" type="checkbox" checked>
-                        <div class="mark toggle__mark"></div>
-                      </label>
-          </div>
-          <div class="form-elements__item--sub">
-                      <label class="toggle">Получать спецпредложения
-                        <input class="toggle__input" type="checkbox">
-                        <div class="mark toggle__mark"></div>
-                      </label>
-          </div>
-        </div>
-        <div class="form-elements__item form-elements__item--big-space">
-          <div class="form-elements__head form-elements__head--accent">
-            <div class="form-elements__title">Like button</div>
-          </div><span class="form-elements__like">
-                      <div class="like">2<i class="like__icon">favorite_border</i></div></span>
-                    <div class="like like--liked">12<i class="like__icon like__icon--liked">favorite</i></div>
-        </div>
-        <div class="form-elements__item">
-          <div class="form-elements__head form-elements__head--accent">
-            <div class="form-elements__title">Rate button</div>
-          </div><span class="form-elements__inline">
-                      <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i>
-                      </div>
-            <div class="form-elements__rating">
-                        <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i>
-                        </div>
-            </div></span>
-        </div>
+      <div class="form-elements__mid-mid">
         <div class="form-elements__item">
           <div class="form-elements__head form-elements__head--accent">
             <div class="form-elements__title">Dropdown </div>
@@ -244,49 +269,19 @@
           <div class="form-elements__head form-elements__head--accent">
             <div class="form-elements__title">Rich checkbox buttons</div>
           </div>
-                    <label class="checkbox checkbox--bold">Широкий коридор
-                      <input class="checkbox__input" type="checkbox">
-                      <div class="checkbox__mark"></div>
-                      <div class="checkbox__description">Ширина коридоров в номере не менее 91 см.</div>
-                    </label>
-                    <label class="checkbox checkbox--bold">Помощник для инвалидов
-                      <input class="checkbox__input" type="checkbox">
-                      <div class="checkbox__mark"></div>
-                      <div class="checkbox__description">На 1 этаже вас встретит специалист и проводит до номера.</div>
-                    </label>
+                      <label class="checkbox checkbox--bold">Широкий коридор
+                        <input class="checkbox__input" type="checkbox">
+                        <div class="checkbox__mark"></div>
+                        <div class="checkbox__description">Ширина коридоров в номере не менее 91 см.</div>
+                      </label>
+                      <label class="checkbox checkbox--bold">Помощник для инвалидов
+                        <input class="checkbox__input" type="checkbox">
+                        <div class="checkbox__mark"></div>
+                        <div class="checkbox__description">На 1 этаже вас встретит специалист и проводит до номера.</div>
+                      </label>
         </div>
       </div>
-      <div class="form-elements__right"> 
-        <div class="form-elements__item">
-          <div class="form-elements__head form-elements__head--accent">
-            <div class="form-elements__title">Range slider</div>
-            <!-- add slider-->
-          </div>
-        </div>
-        <div class="form-elements__item">
-          <div class="form-elements__head form-elements__head--accent">
-            <div class="form-elements__title">Buttons</div>
-          </div>
-          <div class="form-elements__buttons">
-            <div class="button form-elements__btn">Click me </div>
-            <div class="button button--disabled form-elements__btn">Click me </div>
-            <div class="rounded-button form-elements__btn--big form-elements__btn">Click me</div>
-            <div class="rounded-button rounded-button--disabled form-elements__btn--big form-elements__btn">Click me</div>
-            <div class="simple-button form-elements__btn">Click me</div>
-            <div class="simple-button simple-button--disabled form-elements__btn">Click me</div>
-                        <div class="long-button">Перейти к оплате<i class="long-button__icon">arrow_forward</i></div>
-          </div>
-        </div>
-        <div class="form-elements__item">
-          <div class="form-elements__head form-elements__head--accent">
-            <div class="form-elements__title">Pagination </div>
-          </div>
-                    <div class="pagination"><a class="pagination__item pagination__item--active" href="#">1</a><a class="pagination__item" href="#">2</a><a class="pagination__item" href="#">3</a>
-                      <div class="pagination__item">...</div><a class="pagination__item" href="#">15</a>
-                      <button class="pagination__next"></button>
-                      <div class="pagination__info">1 &ndash; 12 из 100+ вариантов аренды</div>
-                    </div>
-        </div>
+      <div class="form-elements__mid-right">
         <div class="form-elements__item">
           <div class="form-elements__head form-elements__head--accent">
             <div class="form-elements__title">Dropdown </div>
@@ -304,8 +299,20 @@
                     </ul>
         </div>
       </div>
-      <div class="form-elements__bot"> 
-                <div class="comment"><img class="avatar" src="../img/profile-pic_2.jpg">
+      <div class="form-elements__bot-left">
+        <div class="form-elements__item">
+                    <div class="additions">
+                      <div class="additions__title">Комфорт</div>
+                      <div>Шумопоглощающие стены</div><i class="material-icons additions__icon">tag_faces</i>
+                    </div>
+                    <div class="additions">
+                      <div class="additions__title">Удобство</div>
+                      <div>Окно в каждой из спален</div><i class="material-icons additions__icon">location_city</i>
+                    </div>
+        </div>
+      </div>
+      <div class="form-elements__bot-mid">
+                <div class="comment"><img class="avatar" src="../img/profile-pic_1.jpg">
                   <div>
                     <div class="comment__author">Мурад Сарафанов</div>
                     <div class="comment__date">5 дней назад</div>
@@ -316,15 +323,13 @@
                   <div class="comment__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</div>
                 </div>
       </div>
-      <div class="form-elements__item">
-        <div id="dr"></div>
-      </div>
-      <div class="form-elements__item">
-        <div id="dr2"></div>
-      </div>
-      <div class="form-elements__item">
-        <div id="dr3"></div>
-      </div>
     </div>
   <script type="text/javascript" src="../common.js"></script><script type="text/javascript" src="../formElements.js"></script></body>
 </html>
+<!--      .form-elements__item
+  #dr
+.form-elements__item
+  #dr2
+.form-elements__item
+  #dr3
+-->

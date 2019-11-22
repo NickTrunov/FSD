@@ -1,58 +1,50 @@
 @import '../../scss/sizes.scss';
 
 .form-elements {
-    margin: 143px auto;
-    max-width: 85%;
+    margin: 140px auto;
+    max-width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px 1fr));
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 'left' 'mid' 'right' 'bot';
+    grid-template-columns: repeat(3, minmax(320px 1fr));
+    grid-template:
+                "top-left top-mid top-right" 726px 
+                "mid-left mid-mid mid-right" 627px  
+                "bot-left bot-mid bot-mid" 290px;
     justify-items: center;
-    gap: 120px;
+    grid-column-gap: 72px;
+    grid-row-gap: 40px;
 
-    &__left {
-        grid-area: left;
+    &__top-left {
+        grid-area: top-left;
+    }
+    &__top-mid {
+        grid-area: top-mid;
+    }
+    &__top-right {
+        grid-area: top-right;
     }
 
-    &__mid {
-        grid-area: mid;
+    &__mid-left {
+        grid-area: mid-left;
+    }
+    &__mid-mid {
+        grid-area: mid-mid;
+    }
+    &__mid-right {
+        grid-area: mid-right;
     }
 
-    &__right {
-        grid-area: right;
+    &__bot-left {
+        grid-area: bot-left;
     }
-
-    &__bot {
-        grid-area: bot;
+    &__bot-mid {
+        grid-area: bot-mid;
     }
 
     &__item {
         width: 320px;
         padding-bottom: 20px;
-
-        &--sub {
-            padding-bottom: 14px;
-        }
-
-        &--big-space {
-            padding-bottom: 40px;
-        }
-    }
-
-    &__like {
-        margin-right: 10px;
-    }
-
-    &__rating {
-        padding-left: 20px;
-    }
-
-    &__inline {
-        display: flex;
-    }
-
-    &__top-margin {
-        margin-top: 120px;
+        align-self: center;
+        justify-self: center;
     }
 
     &__head {
@@ -61,18 +53,10 @@
         text-transform: uppercase;
         font-size: .75rem;
         margin-bottom: 5px;
-
-        &--accent {
-            margin-bottom: 16px;
-        }
     }
 
     &__title {
         font-family: 'Montserrat Bold';
-    }
-
-    &__small-container {
-        width: 266px;
     }
 
     &__buttons {
@@ -94,13 +78,26 @@
 @media screen and (min-width: $small-size) {
 
     .form-elements {
-        grid-template-areas: 'left right' 'mid bot';
+        grid-template:
+        "top-left" 
+        "top-mid"
+        "top-right"
+        "mid-left"
+        "mid-mid"
+        "mid-right"
+        "bot-left"
+        "bot-left"
+        "bot-mid bot-mid";
     }
 }
 
 @media screen and (min-width: $middle-size) {
 
     .form-elements {
-        grid-template-areas: 'left mid right' 'left bot bot';
+        grid-template-areas:
+        "top-left top-mid" 574px
+        "top-right mid-left" 627px
+        "mid-mid mid-right" 450px
+        "bot-left bot-mid bot-mid" 290px;
     }
 }
