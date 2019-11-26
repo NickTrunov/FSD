@@ -5,7 +5,7 @@ import '../../blocks/configuration-dropdown/configuration-dropdown';
 import 'jquery.maskedinput/src/jquery.maskedinput';
 import '../../blocks/comment/comment';
 import '../../blocks/expander/expander';
-import '../../blocks/additions/additions';
+import '../../blocks/feature/feature';
 import '../../blocks/checkbox/checkbox';
 import '../../blocks/radio/radio';
 import '../../blocks/pagination/pagination';

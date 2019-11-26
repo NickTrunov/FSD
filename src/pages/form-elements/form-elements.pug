@@ -134,6 +134,19 @@ html
             .form-elements__desc Default
           #dd2      
 
+      .form-elements__mid-mid
+        .form-elements__item
+          .form-elements__head.form-elements__head--accent
+            .form-elements__title Dropdown 
+          #dd3
+
+      .form-elements__mid-right
+        .form-elements__item
+          .form-elements__head.form-elements__head--accent
+            .form-elements__title Dropdown 
+          #dd4
+
+      .form-elements__mid2-left
         include ../../blocks/expander/expander 
         .form-elements__item
           +expander({
@@ -158,14 +171,9 @@ html
               ]
           })
 
-      .form-elements__mid-mid
+      .form-elements__mid2-mid
         .form-elements__item
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Dropdown 
-          #dd3
-
-        .form-elements__item.form-elements__top-margin
-          .form-elements__head.form-elements__head--accent
+          .form-elements__head
             .form-elements__title Rich checkbox buttons
           +checkboxList([
             { 
@@ -178,14 +186,9 @@ html
             },
           ])
      
-      .form-elements__mid-right
+      .form-elements__mid2-right
         .form-elements__item
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Dropdown 
-          #dd4
-
-        .form-elements__item.form-elements__top-margin
-          .form-elements__head.form-elements__head--accent
+          .form-elements__head
             .form-elements__title Bullet list 
           include ../../blocks/bullet/bullet 
           +bullet([
@@ -196,13 +199,13 @@ html
 
       .form-elements__bot-left
         .form-elements__item
-          include ../../blocks/additions/additions 
-          +additions({
+          include ../../blocks/feature/feature 
+          +feature({
               title: 'Комфорт',
               desc: 'Шумопоглощающие стены',
               icon: 'tag_faces'
           })
-          +additions({
+          +feature({
               title: 'Удобство',
               desc: 'Окно в каждой из спален',
               icon: 'location_city'
@@ -220,10 +223,3 @@ html
                 likes: 12
             }
         })
-
-//      .form-elements__item
-        #dr
-      .form-elements__item
-        #dr2
-      .form-elements__item
-        #dr3

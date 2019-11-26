@@ -1,0 +1,8 @@
+mixin feature(data)
+  - var noBorder = '';
+  if data.noBorder
+    - noBorder = 'feature--no-border'
+  .feature(class=noBorder)
+    .feature__title= data.title
+    div= data.desc
+    i.material-icons.feature__icon= data.icon
