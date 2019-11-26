@@ -10,6 +10,7 @@ module.exports = {
         colorsType: './src/pages/colors-type/colors-type.js',
         cards: './src/pages/cards/cards.js',
         formElements: './src/pages/form-elements/form-elements.js',
+        headersFooters: './src/pages/headers-footers/headers-footers.js',
     },
     output: {
             path: path.resolve(__dirname, 'build')
@@ -68,6 +69,12 @@ module.exports = {
 			filename: 'pages/form-elements.html',
 			template: './src/pages/form-elements/form-elements.pug',
 			chunks: ['common', 'formElements']
+        }),
+        
+        new HtmlWebpackPlugin({
+			filename: 'pages/headers-footers.html',
+			template: './src/pages/headers-footers/headers-footers.pug',
+			chunks: ['common', 'headersFooters']
 		}),
         
         new MiniCssExtractPlugin({

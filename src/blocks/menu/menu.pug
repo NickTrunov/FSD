@@ -1,0 +1,14 @@
+mixin menu(items)
+  .menu
+    +_print-items(items)
+
+
+mixin _print-items(items)
+  each item in items
+    if Array.isArray(item.link)
+      div(class=item.classes)= item.text
+        .submenu
+          +_print-items(item.link)
+    else
+      div(class=item.classes)
+        a(href=item.link)= item.text
