@@ -1,4 +1,4 @@
-@import '../../scss/sizes.scss';
+@import '../../scss/colors.scss';
 
 .form-elements {
     margin: 140px auto;
@@ -68,6 +68,11 @@
 
     &__title {
         font-family: 'Montserrat Bold';
+        color: $dark-shade-100;
+    }
+
+    &__desc {
+        color: $dark-shade-50;
     }
 
     &__buttons {

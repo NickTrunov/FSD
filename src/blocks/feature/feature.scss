@@ -1,16 +1,12 @@
 @import '../../scss/colors.scss';
 
 .feature {
+    width: 280px;
     position: relative;
-    line-height: 1.716em;
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: $dark-shade-10;
-    padding: 0 0 1.43em 4.14em;
-
-    &--no-border {
-        border: none;
-    }
+    line-height: 24px;
+    border-bottom: 1px solid $dark-shade-10;
+    padding: 0 0 20px 58px;
+    margin-bottom: 20px;
 
     &__title {
         font-family: 'Montserrat Bold';
@@ -18,11 +14,12 @@
 
     &__icon {
         position: absolute;
-        top: .1em;
+        top: 0;
         left: 0;
         font-family: 'Material Icons';
-        font-size: 3.43em;
-        line-height: .85em;
+        font-style: normal;
+        font-size: 48px;
+        line-height: 48px;
         background: $gradient;
         background-clip: text;
         -webkit-background-clip: text;
