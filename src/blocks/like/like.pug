@@ -1,7 +1,7 @@
 mixin like(data)
     if data.liked
-        .like.like--liked= data.likes
-            i.like__icon.like__icon--liked favorite
+        .like(data-count=data.likes).active
+            span.like__icon
     else
-        .like= data.likes
-            i.like__icon favorite_border
+        .like(data-count=data.likes)
+            span.like__icon
