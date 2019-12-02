@@ -10,7 +10,6 @@
                 "mid-left mid-mid mid-right" 280px 
                 "mid2-left mid2-mid mid2-right" 329px  
                 "bot-left bot-mid bot-mid" 300px;
-    justify-items: center;
     grid-column-gap: 70px;
     grid-row-gap: 40px;
 
@@ -54,8 +53,6 @@
     &__item {
         width: 320px;
         padding-bottom: 18px;
-        align-self: center;
-        justify-self: center;
     }
 
     &__head {

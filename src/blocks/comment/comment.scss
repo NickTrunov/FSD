@@ -1,10 +1,9 @@
 .comment {
     padding-top: 10px;
-    padding-left: 47px;
     display: grid;
-    grid-template-columns: 3.57em 1fr;
-    grid-template-rows: 3.57em 1fr;
-    grid-gap: .57em;
+    grid-template-columns: 47px 1fr;
+    grid-template-rows: 48px 1fr;
+    grid-gap: 10px;
 
     &__author {
         padding-top: .143em;
@@ -13,6 +12,10 @@
 
     &__date {
         padding-top: .285em;
+    }
+
+    &__like {
+        padding: 1px 3px;
     }
 
     &__text {
