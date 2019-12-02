@@ -2,23 +2,24 @@
 
 .bullet {
     list-style: none;
-    line-height: 1.54em;
+    line-height: 24px;
     padding-inline-start: 0;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-end: 0;
     list-style-position: inside;
+    width: 260px;
 
     & li {
         position: relative;
-        padding-left: 19px;
-        padding-bottom: 14px;
+        padding-left: 21px;
+        padding-bottom: 10px;
 
         &::before {
             content: '';
             position: absolute;
-            top: 5px;
-            left: -1px;
+            top: 7px;
+            left: 0;
             width: 10px;
             height: 10px;
             background-color: $dark-shade-25;
