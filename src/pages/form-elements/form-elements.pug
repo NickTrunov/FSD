@@ -98,7 +98,7 @@ html
             +rating(5)
             
       .form-elements__top-right
-        .form-elements__item
+        .form-elements__item.form-elements__item--slider
           .form-elements__head
             .form-elements__title Range slider
             // add slider
@@ -106,14 +106,15 @@ html
           .form-elements__head
             .form-elements__title Buttons
           .form-elements__buttons
-            .button.form-elements__btn Click me 
-            .button.button--disabled.form-elements__btn Click me 
-            .rounded-button.form-elements__btn--big.form-elements__btn Click me
-            .rounded-button.rounded-button--disabled.form-elements__btn--big.form-elements__btn Click me
-            .simple-button.form-elements__btn Click me
-            .simple-button.simple-button--disabled.form-elements__btn Click me
-            include ../../blocks/long-button/long-button 
-            +long-button('Перейти к оплате')
+            .button Click me 
+            .button.button--disabled Click me 
+            .rounded-button Click me
+            .rounded-button.rounded-button--disabled Click me
+          .form-elements__buttons
+            .simple-button Click me
+            .simple-button.simple-button--disabled Click me
+          include ../../blocks/long-button/long-button 
+          +long-button('Перейти к оплате')
 
         .form-elements__item
           .form-elements__head

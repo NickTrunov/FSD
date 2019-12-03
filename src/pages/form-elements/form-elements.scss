@@ -91,6 +91,39 @@
     }
     &__top-right {
         grid-area: top-right;
+
+        .form-elements__item {
+            padding-bottom: 25px;
+
+            &--slider {
+                padding-bottom: 55px;
+            }
+
+            &:last-child {
+                margin-top: 13px;
+                margin-left: 1px;
+            }
+        }
+
+        .form-elements__head {
+            margin-bottom: 13px;
+        }
+
+        .button  {
+            margin: 0 15px 32px 1px;
+        }
+        .rounded-button  {
+            margin: 0 20px 30px 1px;
+        }
+        .simple-button  {
+            margin: 0 17px 27px 1px;
+        }
+
+        &__buttons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
     }
 
     &__mid-left {
@@ -118,20 +151,5 @@
     }
     &__bot-mid {
         grid-area: bot-mid;
-    }
-
-    &__buttons {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-    }
-
-    &__btn {
-        margin-right: 20px;
-        margin-bottom: 30px;
-
-        &--big {
-            margin-right: 30px;
-        }
     }
 }
