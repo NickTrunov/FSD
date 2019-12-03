@@ -3,8 +3,8 @@
 .radio {
     display: inline-block;
     position: relative;
-    padding-left: 31px;
-    padding-right: 5px;
+    padding-left: 30px;
+    padding-right: 7px;
     margin-bottom: 5px;
     user-select: none;
     cursor: pointer;
@@ -17,8 +17,8 @@
 
     &__mark {
         position: absolute;
-        top: .06em;
-        left: .125em;
+        top: 1px;
+        left: 0;
         width: 20px;
         height: 20px;
         border-radius: 50%;

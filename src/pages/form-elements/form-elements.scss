@@ -6,18 +6,88 @@
     display: grid;
     grid-template-columns: repeat(3, 320px);
     grid-template:
-                "top-left top-mid top-right" 600px 
+                "top-left top-mid top-right" 693px 
                 "mid-left mid-mid mid-right" 280px 
                 "mid2-left mid2-mid mid2-right" 329px  
                 "bot-left bot-mid bot-mid" 300px;
     grid-column-gap: 70px;
     grid-row-gap: 40px;
 
+    &__item {
+        width: 320px;
+        padding-bottom: 18.3px;
+
+        &--short {
+            width: 266px;
+        }
+
+        &--big-margin {
+            margin: 2px 0 22px;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: .75rem;
+        margin-bottom: 2px;
+    }
+
+    &__title {
+        font-family: 'Montserrat Bold';
+        color: $dark-shade-100;
+    }
+
+    &__desc {
+        color: $dark-shade-50;
+    }
+
+    &__like {
+        margin-right: 6px;
+    }
+
+    &__rating {
+        display: flex;
+
+        &--first {
+            margin-right: 20px;
+        }
+    }
+
     &__top-left {
         grid-area: top-left;
+
+        .form-elements__item:nth-child(6) {
+            margin-bottom: 19px;
+        }
     }
     &__top-mid {
         grid-area: top-mid;
+
+        .form-elements__item {
+            padding-bottom: 25px;
+
+            &:nth-child(3) {
+                padding: 9px 0 31px;   
+            }
+
+            &:nth-child(4) {
+                margin-bottom: 8px;   
+            }
+
+            &--toggle {
+            padding-bottom: 13px; 
+            }
+        }
+
+        .form-elements__head {
+            margin-bottom: 13px;
+
+            &--radio {
+                margin-bottom: 12px;   
+            }
+        }
     }
     &__top-right {
         grid-area: top-right;
@@ -48,28 +118,6 @@
     }
     &__bot-mid {
         grid-area: bot-mid;
-    }
-
-    &__item {
-        width: 320px;
-        padding-bottom: 18px;
-    }
-
-    &__head {
-        display: flex;
-        justify-content: space-between;
-        text-transform: uppercase;
-        font-size: .75rem;
-        margin-bottom: 2px;
-    }
-
-    &__title {
-        font-family: 'Montserrat Bold';
-        color: $dark-shade-100;
-    }
-
-    &__desc {
-        color: $dark-shade-50;
     }
 
     &__buttons {

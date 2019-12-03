@@ -2,9 +2,10 @@
 
 .checkbox {
     display: block;
+    width: 222px;
     position: relative;
     padding-left: 2.1em;
-    padding-bottom: .7em;
+    padding-bottom: .75em;
     cursor: pointer;
     user-select: none;
 
@@ -13,6 +14,7 @@
     }
 
     &__description {
+        width: 230px;
         font-family: 'Montserrat';
         font-size: .75rem;
         line-height: 1.2em;

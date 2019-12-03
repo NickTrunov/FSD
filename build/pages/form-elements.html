@@ -18,7 +18,7 @@
             <div class="form-elements__title">Text field</div>
             <div class="form-elements__desc">Hover / Focus</div>
           </div>
-          <input class="text-field text-field--focus" placeholder="Email">
+          <input class="text-field text-field--focus" placeholder="This is pretty awesome">
         </div>
         <div class="form-elements__item">
           <div class="form-elements__head">
@@ -63,14 +63,14 @@
                       </div>
                     </div>
         </div>
-        <div class="form-elements__item">
+        <div class="form-elements__item form-elements__item--big-margin">
           <div class="form-elements__head">
             <div class="form-elements__title">Masked text field</div>
             <div class="form-elements__desc">Default</div>
           </div>
           <input class="text-field" id="birthday" placeholder="ДД.ММ.ГГГГ">
         </div>
-        <div class="form-elements__item">
+        <div class="form-elements__item form-elements__item--big-margin">
                   <div class="range-dates">
                     <label class="range-dates__label range-dates__label--small">Date dropdown<span class="range-dates__wrapper">
                         <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ"></span></label>
@@ -78,13 +78,13 @@
                         <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ"></span></label>
                   </div>
         </div>
-        <div class="form-elements__item">
+        <div class="form-elements__item form-elements__item--short form-elements__item--big-margin">
                   <div class="range-dates">
                     <label class="range-dates__label">Filter date dropdown<span class="range-dates__wrapper">
                         <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" value="19 авг - 23 авг"></span></label>
                   </div>
         </div>
-        <div class="form-elements__item">
+        <div class="form-elements__item form-elements__item--short">
           <div class="form-elements__head">
             <div class="form-elements__title">Subscription text field </div>
           </div>
@@ -113,7 +113,7 @@
                     </label>
         </div>
         <div class="form-elements__item">
-          <div class="form-elements__head">
+          <div class="form-elements__head form-elements__head--radio">
             <div class="form-elements__title">Radio buttons </div>
           </div>
                     <label class="radio">Мужчина
@@ -129,13 +129,13 @@
           <div class="form-elements__head">
             <div class="form-elements__title">Toggle</div>
           </div>
-          <div class="form-elements__item">
+          <div class="form-elements__item--toggle">
                       <label class="toggle">Получать спецпредложения
                         <input class="toggle__input" type="checkbox" checked>
                         <div class="mark toggle__mark"></div>
                       </label>
           </div>
-          <div class="form-elements__item">
+          <div class="form-elements__item--toggle">
                       <label class="toggle">Получать спецпредложения
                         <input class="toggle__input" type="checkbox">
                         <div class="mark toggle__mark"></div>
@@ -146,18 +146,21 @@
           <div class="form-elements__head">
             <div class="form-elements__title">Like button</div>
           </div><span class="form-elements__like">
-                      <div class="like" data-count="2"><span class="like__icon"></span></div>
-                      <div class="like active" data-count="12"><span class="like__icon"></span></div></span>
+                      <div class="like" data-count="2"><span class="like__icon"></span></div></span>
+                    <div class="like active" data-count="12"><span class="like__icon"></span></div>
         </div>
         <div class="form-elements__item">
           <div class="form-elements__head">
             <div class="form-elements__title">Rate button</div>
-          </div><span class="form-elements__inline">
-                      <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i>
-                      </div>
-            <div class="form-elements__rating"></div>
+          </div>
+          <div class="form-elements__rating">
+            <div class="form-elements__rating--first">
+                        <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i>
+                        </div>
+            </div>
                       <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i>
-                      </div></span>
+                      </div>
+          </div>
         </div>
       </div>
       <div class="form-elements__top-right">
@@ -193,14 +196,14 @@
         </div>
       </div>
       <div class="form-elements__mid-left">
-        <div class="form-elements__item">
+        <div class="form-elements__item form-elements__item--short">
           <div class="form-elements__head">
             <div class="form-elements__title">Dropdown </div>
             <div class="form-elements__desc">Default</div>
           </div>
           <div id="dd"></div>
         </div>
-        <div class="form-elements__item">
+        <div class="form-elements__item form-elements__item--short">
           <div class="form-elements__head">
             <div class="form-elements__title">Dropdown </div>
             <div class="form-elements__desc">Default</div>

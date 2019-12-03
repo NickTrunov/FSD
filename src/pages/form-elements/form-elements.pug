@@ -15,34 +15,34 @@ html
           .form-elements__head
             .form-elements__title Text field
             .form-elements__desc Hover / Focus
-          input.text-field.text-field--focus(placeholder='Email')
+          input.text-field.text-field--focus(placeholder='This is pretty awesome')
         .form-elements__item
           .form-elements__head
             .form-elements__title Dropdown
             .form-elements__desc Default
           include ../../blocks/configuration-dropdown/configuration-dropdown
           +guest-dropdown(false)
-        .form-elements__item
+        .form-elements__item.form-elements__item--big-margin
           .form-elements__head
             .form-elements__title Masked text field
             .form-elements__desc Default
           input#birthday.text-field(placeholder='ДД.ММ.ГГГГ')
 
         include ../../blocks/range-dates/range-dates
-        .form-elements__item
+        .form-elements__item.form-elements__item--big-margin
           +range-dates({
             firstLabel: 'Date dropdown',
             secondLabel: 'Date dropdown'
           })
             
 
-        .form-elements__item
+        .form-elements__item.form-elements__item--short.form-elements__item--big-margin
           +date-dropdown({
             label: 'Filter date dropdown',
             date: '19 авг - 23 авг'
           })
 
-        .form-elements__item
+        .form-elements__item.form-elements__item--short
           .form-elements__head
             .form-elements__title Subscription text field 
           include ../../blocks/subscription/subscription 
@@ -58,7 +58,7 @@ html
           +checkbox('Можно пригласить гостей (до 10 человек)', true)
 
         .form-elements__item
-          .form-elements__head
+          .form-elements__head.form-elements__head--radio
             .form-elements__title Radio buttons 
           include ../../blocks/radio/radio 
           +radio('Мужчина', 'gender', true)
@@ -68,9 +68,9 @@ html
           .form-elements__head
             .form-elements__title Toggle
           include ../../blocks/toggle/toggle 
-          .form-elements__item
-            +toggle('Получать спецпредложения', true) 
-          .form-elements__item
+          .form-elements__item--toggle
+            +toggle('Получать спецпредложения', true)  
+          .form-elements__item--toggle
             +toggle('Получать спецпредложения') 
 
         .form-elements__item
@@ -83,18 +83,18 @@ html
                 liked: false
             })
         
-            +like({
-              likes: 12,
-              liked: true
-            })
+          +like({
+            likes: 12,
+            liked: true
+          })
 
         .form-elements__item
           .form-elements__head
             .form-elements__title Rate button
           include ../../blocks/rating/rating 
-          span.form-elements__inline
-            +rating(4)
-            .form-elements__rating
+          .form-elements__rating
+            .form-elements__rating--first
+              +rating(4)
             +rating(5)
             
       .form-elements__top-right
@@ -122,13 +122,13 @@ html
           +pagination()
 
       .form-elements__mid-left
-        .form-elements__item
+        .form-elements__item.form-elements__item--short
           .form-elements__head
             .form-elements__title Dropdown 
             .form-elements__desc Default
           #dd
 
-        .form-elements__item
+        .form-elements__item.form-elements__item--short
           .form-elements__head
             .form-elements__title Dropdown 
             .form-elements__desc Default
