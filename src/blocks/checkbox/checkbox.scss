@@ -2,7 +2,7 @@
 
 .checkbox {
     display: block;
-    width: 222px;
+    width: 240px;
     position: relative;
     padding-left: 2.1em;
     padding-bottom: .75em;
@@ -11,6 +11,8 @@
 
     &--bold {
         font-family: 'Montserrat Bold';
+        width: 320px;
+        padding-bottom: .65em;
     }
 
     &__description {
@@ -18,7 +20,7 @@
         font-family: 'Montserrat';
         font-size: .75rem;
         line-height: 1.2em;
-        padding-top: .65em;
+        padding-top: .45em;
         color: $dark-shade-50;
     }
 

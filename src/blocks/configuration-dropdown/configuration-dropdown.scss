@@ -18,7 +18,7 @@
         line-height: 1.715em;
         padding: .57em 0 .715em 1em;
         border: 1px solid $dark-shade-25;
-        border-radius: 4px;
+        border-radius: 4px 4px 0 0;
         user-select: none;
         cursor: pointer;
 
@@ -45,7 +45,7 @@
         left: 0;
         right: 0;
         border: 1px solid $dark-shade-25;
-        border-radius: 4px;
+        border-radius: 0 0 4px 4px;
         border-top: none;
         padding-bottom: 6px;
 
@@ -79,11 +79,11 @@
 
     &__controlls {
         display: flex;
-        width: 100px;
+        width: 98px;
         justify-content: space-between;
         line-height: 0;
         padding-top: 6px;
-        padding-right: 6px;
+        padding-right: 5px;
     }
 
     &__counter {
@@ -114,6 +114,6 @@
         display: flex;
         justify-content: space-between;
         height: 40px;
-        padding: 16px 7px 0;
+        padding: 17px 7px 0 14px;
     }
 }

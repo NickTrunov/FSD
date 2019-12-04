@@ -110,13 +110,13 @@
         }
 
         .button  {
-            margin: 0 15px 32px 1px;
+            margin: 0 15px 32px 2px;
         }
         .rounded-button  {
-            margin: 0 20px 30px 1px;
+            margin: 0 20px 30px 2px;
         }
         .simple-button  {
-            margin: 0 17px 27px 1px;
+            margin: 0 17px 27px 2px;
         }
 
         &__buttons {
@@ -138,12 +138,24 @@
 
     &__mid2-left {
         grid-area: mid2-left;
+
+        .form-elements__item {
+            padding-bottom: 30px;
+        }
     }
     &__mid2-mid {
         grid-area: mid2-mid;
+
+        .form-elements__head {
+            margin-bottom: 13px;
+        }
     }
     &__mid2-right {
         grid-area: mid2-right;
+
+        .form-elements__head {
+            margin-bottom: 10px;
+        }
     }
 
     &__bot-left {

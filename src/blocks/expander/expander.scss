@@ -6,7 +6,7 @@
         text-transform: uppercase;
         font-family: 'Montserrat Bold', Arial;
         font-size: .75rem;
-        padding-bottom: 16px;
+        padding-bottom: 14px;
         color: $dark-shade-100;
         cursor: pointer;
         user-select: none;
@@ -15,7 +15,7 @@
             content: '';
             display: inline-block;
             position: relative;
-            top: -3px;
+            top: -2px;
             margin-left: 48px;
             width: 8px;
             height: 8px;
@@ -27,7 +27,7 @@
 
         &--open::after {
             transform: rotate(135deg);
-            top: 3px;
+            top: 2px;
         }
     }
 

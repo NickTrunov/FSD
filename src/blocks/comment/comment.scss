@@ -2,8 +2,8 @@
     padding-top: 10px;
     display: grid;
     grid-template-columns: 47px 1fr;
-    grid-template-rows: 48px 1fr;
-    grid-gap: 10px;
+    grid-template-rows: 47px 1fr;
+    grid-gap: 11px;
 
     &__author {
         padding-top: .143em;
@@ -15,7 +15,7 @@
     }
 
     &__like {
-        padding: 1px 3px;
+        padding: 2px 4px;
     }
 
     &__text {
