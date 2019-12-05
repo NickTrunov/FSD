@@ -13,7 +13,7 @@
 .datepicker {
     font-family: 'Montserrat';
     font-size: .75rem;
-    padding: 10px 20px 16px;
+    padding: 9px 19px 16px;
     width: 280px;
 
     &--content {
@@ -44,7 +44,9 @@
         }
 
         &.-in-range- {
-            color: $white;
+            font-family: 'Montserrat';
+            color: $dark-shade-50;
+            border-radius: 0;
         }
     }
 
@@ -77,6 +79,7 @@
             height: 40px;
             background-image: $gradient-25;
             right: 0;
+            z-index: -1;
         }
     }
 
@@ -90,6 +93,7 @@
             height: 40px;
             background-image: $gradient-25;
             left: 0;
+            z-index: -1;
         }
     }
 }
@@ -97,6 +101,8 @@
 .datepicker--day-name {
     font-family: 'Montserrat Bold';
     color: $purple;
+    font-size: 12px;
+    margin: 4px 0 -3px;
     width: 40px;
     height: 40px;
     text-transform: none;
