@@ -16,6 +16,11 @@
     user-select: none;
     background-color: $white;
 
+    &--small {
+        width: 75px;
+        padding: 3px 0;
+    }
+
     &::after {
         display: inherit;
         content: '';

@@ -24,7 +24,7 @@ body{background-color:#F4F4F6}.cards{max-width:90%;margin:150px auto;display:fle
 
 .card-footer{position:relative;z-index:1;display:flex;width:100%;justify-content:space-between;align-items:baseline;line-height:18px;color:#000}.card-footer .rounded-button{margin-right:2px}
 
-.rounded-button{display:inline-block;position:relative;font-family:'Montserrat Bold';color:#bc9cff;border-radius:22px;width:95px;padding:8px 0;text-align:center;text-transform:uppercase;font-size:.75rem;line-height:24px;cursor:pointer;user-select:none;background-color:#fff}.rounded-button::after{display:inherit;content:'';position:absolute;top:-2px;bottom:-2px;left:-2px;right:-2px;z-index:-1;border-radius:22px;background-image:linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%)}.rounded-button--disabled::after{opacity:.5}.rounded-button--disabled{cursor:auto}
+.rounded-button{display:inline-block;position:relative;font-family:'Montserrat Bold';color:#bc9cff;border-radius:22px;width:95px;padding:8px 0;text-align:center;text-transform:uppercase;font-size:.75rem;line-height:24px;cursor:pointer;user-select:none;background-color:#fff}.rounded-button--small{width:75px;padding:3px 0}.rounded-button::after{display:inherit;content:'';position:absolute;top:-2px;bottom:-2px;left:-2px;right:-2px;z-index:-1;border-radius:22px;background-image:linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%)}.rounded-button--disabled::after{opacity:.5}.rounded-button--disabled{cursor:auto}
 
 .booking-card{width:380px}.booking-card__header{display:flex;justify-content:space-between;align-items:baseline}.booking-card__item{margin:20px 0;position:relative}.booking-card__item--last{margin:0}.booking-card__item--up{z-index:10}.booking-card__item--middle{z-index:5}
 
