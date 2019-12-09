@@ -5,8 +5,10 @@ mixin header(obj)
       include ../site-logo/site-logo.pug
       .header__logo
         +site-logo
+      .header__toggle
+        button.menu-toggle
       .header__menu
-        +menu(obj.menu)
+        +menu(obj.menu)#menu-1
       if obj.isLogged
         .header__account Cosmin Negoita
       else
@@ -14,5 +16,3 @@ mixin header(obj)
           .header__enter-button
             .rounded-button.rounded-button--small= obj.buttons.enter
           .button.button--small= obj.buttons.register
-      .header__toggle
-        button.menu-toggle#menu_toggle

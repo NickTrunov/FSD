@@ -15,7 +15,7 @@
         color: $dark-shade-50;
         display: block;
         height: 100%;
-        
+        white-space: nowrap;
     }
 
     &__item {
@@ -38,6 +38,7 @@
 
     &__submenu {
         position: relative;
+        z-index: 101;
 
         &::after {
             position: absolute;
@@ -69,7 +70,7 @@
 }
 
 
-@media screen and (min-width: $small-size) {
+@media screen and (min-width: $middle-size) {
     .menu {
         display: flex;
         flex-direction: row;
