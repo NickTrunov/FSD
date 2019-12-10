@@ -2,9 +2,9 @@
     display: flex;
     width: 106px;
     height: 40px;
+    align-items: center;
 
     &__name {
-        padding-top: 12.33px;
-        padding-left: 12px;
+        padding: 3px 0 0 12px;
     }
 }

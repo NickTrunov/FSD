@@ -8,9 +8,8 @@ mixin footer()
         include ../site-logo/site-logo.pug
         .site-logo
           +site-logo
-        p
-        | Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam 
-        | eget nullam pellentesque aliquam curabitur cociis.
+        .footer__description
+          p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
       .footer__nav
         .footer__block__header
           h3 Navigation
@@ -35,8 +34,8 @@ mixin footer()
           a.footer__link(href="#") Community
           a.footer__link(href="#") Get in Touch
       .footer__block
-        .footer__block__header
-          h3 Subscribe to out newsletter
+        .footer__block__header.footer__block__header--last
+          h3 Subscribe to our newsletter
         p Receive our latest news and promotions in your inbox!
         .subscription
           .subscription__item
