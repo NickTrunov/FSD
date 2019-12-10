@@ -38,7 +38,10 @@
 
     &__submenu {
         position: relative;
-        z-index: 101;
+
+        &:hover .submenu {
+            display: block;
+        }
 
         &::after {
             position: absolute;
@@ -48,8 +51,9 @@
             width: 24px;
             height: 21px;
             line-height: 40px;
-            top: 0;
-            right: 10px;
+            top: 10px;
+            right: 20px;
+            transform: rotate(-90deg);
         }
     }
 
@@ -59,13 +63,30 @@
 }
 
 .submenu {
+    position: absolute;
+    top: 0px;
+    left: calc(100% + 1px);
     display: none;
     flex-direction: column;
     padding: 10px;
-    background-color: $dark-shade-10;
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+
+    &:hover {
+        display: block;
+    }
 
     &--open {
         display: flex;
+    }
+
+    &__item {
+        padding: 0px 40px;
+        text-align: center;
+
+        &:hover {
+            background-color: $dark-shade-5;
+        }
     }
 }
 
@@ -102,34 +123,19 @@
                 height: 21px;
                 line-height: 22px;
                 top: 10px;
-                right: 0;
+                right: 3px;
+                transform: none;
             }
         }
         
     }
 
-    
-
     .submenu {
-        position: absolute;
-        display: none;
         top: 40px;
         left: 0px;
-        border: 1px solid rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-        background-color: $white;
-
-        &:hover {
-            display: block;
-        }
 
         &__item {
             padding: 10px 40px;
-            text-align: center;
-
-            &:hover {
-                background-color: $dark-shade-5;
-            }
         }
     }
 }
