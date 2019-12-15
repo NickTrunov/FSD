@@ -68,10 +68,14 @@
             align-items: baseline;
             padding: 10px 20px;
         }
+
+        &__socials {
+            position: relative;
+            top: 3px;
+        }
     }
 
     .subscription {
-        position: relative;
-        top: 9px;
+        margin-top: 23px;
     }
 }
