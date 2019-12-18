@@ -1,48 +1,93 @@
-mixin footer()
+mixin footer(data)
   include ../footer-light/footer-light.pug
   .footer-light.footer-light--hidden
-    +footer-light()
+    +footer-light({english: data.english})
   footer.footer
-    .footer__container
-      .footer__block
-        include ../site-logo/site-logo.pug
-        .site-logo
-          +site-logo
-        .footer__description
-          p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-      .footer__nav
-        .footer__block__header
-          h3 Navigation
-        p
-          a.footer__link(href="#") About Us
-          a.footer__link(href="#") News
-          a.footer__link(href="#") Support
-          a.footer__link(href="#") Products
-      .footer__nav
-        .footer__block__header
-          h3 About Us
-        p
-          a.footer__link(href="#") Who we are
-          a.footer__link(href="#") Our team
-          a.footer__link(href="#") Careers
-          a.footer__link(href="#") Investors
-      .footer__nav
-        .footer__block__header
-          h3 Support
-        p
-          a.footer__link(href="#") Documentation
-          a.footer__link(href="#") Community
-          a.footer__link(href="#") Get in Touch
-      .footer__block
-        .footer__block__header.footer__block__header--last
-          h3 Subscribe to our newsletter
-        p Receive our latest news and promotions in your inbox!
-        .subscription
-          .subscription__item
-          input.text-field(placeholder="Your email address")
-    .footer__bottom
-      .footer__copy
-          p Copyright © 2018 Toxin UI Kit. All rights reserved.
-          include ../socials/socials.pug
-          .footer__socials
-            +socials()
+    if data.english  
+      .footer__container
+        .footer__block
+          include ../site-logo/site-logo.pug
+          .site-logo
+            +site-logo
+          .footer__description
+            p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+        .footer__nav
+          .footer__block__header
+            h3 Navigation
+          p
+            a.footer__link(href="#") About Us
+            a.footer__link(href="#") News
+            a.footer__link(href="#") Support
+            a.footer__link(href="#") Products
+        .footer__nav
+          .footer__block__header
+            h3 About Us
+          p
+            a.footer__link(href="#") Who we are
+            a.footer__link(href="#") Our team
+            a.footer__link(href="#") Careers
+            a.footer__link(href="#") Investors
+        .footer__nav
+          .footer__block__header
+            h3 Support
+          p
+            a.footer__link(href="#") Documentation
+            a.footer__link(href="#") Community
+            a.footer__link(href="#") Get in Touch
+        .footer__block
+          .footer__block__header.footer__block__header--last
+            h3 Subscribe to our newsletter
+          p Receive our latest news and promotions in your inbox!
+          .subscription
+            .subscription__item
+            input.text-field(placeholder="Your email address")
+      .footer__bottom
+        .footer__copy
+            p Copyright © 2018 Toxin UI Kit. All rights reserved.
+            include ../socials/socials.pug
+            .footer__socials
+              +socials()
+    else 
+      .footer__container
+        .footer__block
+          include ../site-logo/site-logo.pug
+          .site-logo
+            +site-logo
+          .footer__description
+            p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        .footer__nav
+          .footer__block__header
+            h3 Навигация
+          p
+            a.footer__link(href="#") О нас
+            a.footer__link(href="#") Новости
+            a.footer__link(href="#") Служба поддержки
+            a.footer__link(href="#") Услуги
+        .footer__nav
+          .footer__block__header
+            h3 О нас
+          p
+            a.footer__link(href="#") О сервисе
+            a.footer__link(href="#") Наша команда
+            a.footer__link(href="#") Вакансии
+            a.footer__link(href="#") Инвесторы
+        .footer__nav
+          .footer__block__header
+            h3 Служба поддержки
+          p
+            a.footer__link(href="#") Соглашения
+            a.footer__link(href="#") Сообщества
+            a.footer__link(href="#") Связь с нами
+        .footer__block
+          .footer__block__header.footer__block__header--last
+            h3 Подписка
+          p Получайте специальные предложения и новости сервиса
+          .subscription
+            .subscription__item
+            input.text-field(placeholder="Email")
+      .footer__bottom
+        .footer__copy
+            p Copyright © 2018 Toxin отель. Все права зачищены.
+            include ../socials/socials.pug
+            .footer__socials
+              +socials()
