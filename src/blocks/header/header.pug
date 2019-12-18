@@ -1,4 +1,4 @@
-mixin header(obj)
+mixin header(data)
   include ../menu/menu.pug 
   header.header
     .header__container
@@ -6,13 +6,114 @@ mixin header(obj)
       .header__logo
         +site-logo
       .header__toggle
-        button.menu-toggle
-      .header__menu
-        +menu(obj.menu)#menu-1
-      if obj.isLogged
-        .header__account Cosmin Negoita
+        if data.isLogged
+          button.menu-toggle#toggle--logged
+        else
+          button.menu-toggle#toggle
+      if data.english
+        .header__menu
+          +menu([
+              {
+              text: 'Home',
+              link: '#home',
+              classes: ['menu__item', 'menu__item--current']
+              },
+              {
+              text: 'About Us',
+              link: '#about_us',
+              classes: ['menu__item']
+              }, 
+              {
+              text: 'Services',
+              classes: ['menu__item', 'menu__submenu'],
+              link: [
+              {
+                  text: 'First',
+                  link: '#first',
+                  classes: ['submenu__item']
+              },
+              {
+                  text: 'Second',
+                  link: '#second',
+                  classes: ['submenu__item']
+              }
+              ]},
+              {
+              text: 'Careers',
+              link: '#careers',
+              classes: ['menu__item']
+              },
+              {
+              text: 'News',
+              link: '#news',
+              classes: ['menu__item']
+              },
+              {
+              text: 'Documentation',
+              link: '#docs',
+              classes: ['menu__item']
+              }
+          ])
+        if data.isLogged
+          .header__account Cosmin Negoita
+        else
+          .header__enter-panel
+            .header__enter-button
+              .rounded-button.rounded-button--small Login
+            .button.button--small Register
       else
-        .header__enter-panel
-          .header__enter-button
-            .rounded-button.rounded-button--small= obj.buttons.enter
-          .button.button--small= obj.buttons.register
+        .header__menu
+          +menu([
+              {
+              text: 'О нас',
+              link: '#about_us',
+              classes: ['menu__item']
+              }, 
+              {
+              text: 'Услуги',
+              classes: ['menu__item', 'menu__submenu'],
+              link: [
+              {
+                  text: 'Первая',
+                  link: '#first',
+                  classes: ['submenu__item']
+              },
+              {
+                  text: 'Вторая',
+                  link: '#second',
+                  classes: ['submenu__item']
+              }
+              ]},
+              {
+              text: 'Вакансии',
+              link: '#careers',
+              classes: ['menu__item']
+              },
+              {
+              text: 'Новости',
+              link: '#news',
+              classes: ['menu__item']
+              },
+              {
+              text: 'Соглашения',
+              classes: ['menu__item', 'menu__submenu'],
+              link:  [
+              {
+                  text: 'Первый',
+                  link: '#first_doc',
+                  classes: ['submenu__item']
+              },
+              {
+                  text: 'Второй',
+                  link: '#second_doc',
+                  classes: ['submenu__item']
+              }
+              ]}
+          ])
+        if data.isLogged
+          .header__account Космин Негоита
+        else
+          .header__enter-panel
+            .header__enter-button
+              .rounded-button.rounded-button--small Войти
+            .button.button--small Зарегистрироваться

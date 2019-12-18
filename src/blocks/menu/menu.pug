@@ -1,6 +1,10 @@
 mixin menu(items)
-  .menu
-    +_print-items(items)
+  if data.isLogged
+    .menu#menu--logged
+      +_print-items(items)
+  else
+    .menu#menu
+      +_print-items(items)
 
 
 mixin _print-items(items)
