@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landing</title>
+  <link href="../css/common.css" rel="stylesheet"><link href="../css/landing.css" rel="stylesheet"></head>
+  <body>
+        <header class="header">
+          <div class="header__container">
+            <div class="header__logo">
+                      <div class="site-logo"><img src="../img/logo-color.svg">
+                        <div class="site-logo__name"><img src="../img/toxin.svg"></div>
+                      </div>
+            </div>
+            <div class="header__toggle">
+              <button class="menu-toggle" id="toggle"></button>
+            </div>
+            <div class="header__menu">
+                  <div class="menu" id="menu">
+                        <div class="menu__item"><a href="#about_us">О нас</a></div>
+                        <div class="menu__item menu__submenu">Услуги
+                          <div class="submenu">
+                                <div class="submenu__item"><a href="#first">Первая</a></div>
+                                <div class="submenu__item"><a href="#second">Вторая</a></div>
+                          </div>
+                        </div>
+                        <div class="menu__item"><a href="#careers">Вакансии</a></div>
+                        <div class="menu__item"><a href="#news">Новости</a></div>
+                        <div class="menu__item menu__submenu">Соглашения
+                          <div class="submenu">
+                                <div class="submenu__item"><a href="#first_doc">Первое</a></div>
+                                <div class="submenu__item"><a href="#second_doc">Второе</a></div>
+                          </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="header__enter-panel">
+              <div class="header__enter-button">
+                <div class="rounded-button rounded-button--small">Войти</div>
+              </div>
+              <div class="button button--small">Зарегистрироваться</div>
+            </div>
+          </div>
+        </header>
+    <div class="landing">
+      <div class="landing__background"><img src="../img/landing-background.png"></div>
+      <div class="landing__room-config" id="dd">
+                <div class="find-apartments-card">
+                  <div class="card-canvas">
+                    <h1>
+                       Найдём номера под<br>ваши пожелания</h1>
+                    <div class="find-apartments-card__item find-apartments-card__item--primary">
+                                    <div class="range-dates">
+                                      <label class="range-dates__label range-dates__label--small">Прибытие<span class="range-dates__wrapper">
+                                          <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="first_date"></span></label>
+                                      <label class="range-dates__label range-dates__label--small">Выезд<span class="range-dates__wrapper">
+                                          <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="second_date"></span></label>
+                                    </div>
+                      <div class="calendar">
+                        <input type="text" id="calendar">
+                      </div>
+                    </div>
+                    <div class="find-apartments-card__item">
+                      <!-- rooms-->
+                      <!-- guests-->
+                                    <div class="configuration-dropdown">
+                                      <div class="configuration-dropdown__label">Гости</div>
+                                      <div class="configuration-dropdown__header" id="guest_header">Сколько гостей</div>
+                                      <div class="configuration-dropdown__content configuration-dropdown__content--hide">
+                                        <div class="configuration-dropdown__item" id="config_guest">
+                                          <div class="configuration-dropdown__option">Взрослые</div>
+                                          <div class="configuration-dropdown__controlls">
+                                            <div class="configuration-dropdown__button configuration-dropdown__button--disabled" id="guest" data-id="guest" data-type="dec">-</div>
+                                            <div class="configuration-dropdown__counter" id="guest_field">0</div>
+                                            <div class="configuration-dropdown__button" data-id="guest" data-type="inc">+</div>
+                                          </div>
+                                        </div>
+                                        <div class="configuration-dropdown__item">
+                                          <div class="configuration-dropdown__option">Дети</div>
+                                          <div class="configuration-dropdown__controlls">
+                                            <div class="configuration-dropdown__button configuration-dropdown__button--disabled" id="children" data-id="children" data-type="dec">-</div>
+                                            <div class="configuration-dropdown__counter" id="children_field">0</div>
+                                            <div class="configuration-dropdown__button" data-id="children" data-type="inc">+</div>
+                                          </div>
+                                        </div>
+                                        <div class="configuration-dropdown__item">
+                                          <div class="configuration-dropdown__option">Младенцы</div>
+                                          <div class="configuration-dropdown__controlls">
+                                            <div class="configuration-dropdown__button configuration-dropdown__button--disabled" id="baby" data-id="baby" data-type="dec">-</div>
+                                            <div class="configuration-dropdown__counter" id="baby_field">0</div>
+                                            <div class="configuration-dropdown__button" data-id="baby" data-type="inc">+</div>
+                                          </div>
+                                        </div>
+                                        <div class="configuration-dropdown__footer">
+                                          <div class="configuration-dropdown__footer-button configuration-dropdown__footer-button--hide">
+                                            <div class="simple-button simple-button--disabled" id="clear_guest">Очистить</div>
+                                          </div>
+                                          <div class="simple-button" id="apply_guest">Применить</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                    </div>
+                    <div class="find-apartments-card__button">
+                                    <div class="long-button">Подобрать номер<i class="long-button__icon">arrow_forward</i></div>
+                    </div>
+                  </div>
+                </div>
+      </div>
+    </div>
+        <div class="footer-light--hidden">
+              <footer class="footer-light">
+                <div class="site-logo">
+                        <div class="site-logo"><img src="../img/logo-color.svg">
+                          <div class="site-logo__name"><img src="../img/toxin.svg"></div>
+                        </div>
+                </div>
+                <div class="footer-light__content">Бронирование номеров в лучшем отеле 2019 года<br>по версии ассоциации «Отельные взгляды»  
+                </div>
+                      <div class="socials"><a class="socials__button socials__button--twitter" href="#"></a><a class="socials__button socials__button--fb" href="#"></a><a class="socials__button socials__button--instagram" href="#"></a></div>
+              </footer>
+        </div>
+        <footer class="footer">
+          <div class="footer__container">
+            <div class="footer__block">
+              <div class="site-logo">
+                          <div class="site-logo"><img src="../img/logo-color.svg">
+                            <div class="site-logo__name"><img src="../img/toxin.svg"></div>
+                          </div>
+              </div>
+              <div class="footer__description">
+                <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+              </div>
+            </div>
+            <div class="footer__nav">
+              <div class="footer__block__header">
+                <h3>Навигация</h3>
+              </div>
+              <p><a class="footer__link" href="#">О нас</a><a class="footer__link" href="#">Новости</a><a class="footer__link" href="#">Служба поддержки</a><a class="footer__link" href="#">Услуги</a></p>
+            </div>
+            <div class="footer__nav">
+              <div class="footer__block__header">
+                <h3>О нас</h3>
+              </div>
+              <p><a class="footer__link" href="#">О сервисе</a><a class="footer__link" href="#">Наша команда</a><a class="footer__link" href="#">Вакансии</a><a class="footer__link" href="#">Инвесторы</a></p>
+            </div>
+            <div class="footer__nav">
+              <div class="footer__block__header">
+                <h3>Служба поддержки</h3>
+              </div>
+              <p><a class="footer__link" href="#">Соглашения</a><a class="footer__link" href="#">Сообщества</a><a class="footer__link" href="#">Связь с нами</a></p>
+            </div>
+            <div class="footer__block">
+              <div class="footer__block__header footer__block__header--last">
+                <h3>Подписка</h3>
+              </div>
+              <p>Получайте специальные предложения и новости сервиса</p>
+              <div class="subscription">
+                <div class="subscription__item"></div>
+                <input class="text-field" placeholder="Email">
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copy">
+              <p>Copyright © 2018 Toxin отель. Все права зачищены.</p>
+              <div class="footer__socials">
+                          <div class="socials"><a class="socials__button socials__button--twitter" href="#"></a><a class="socials__button socials__button--fb" href="#"></a><a class="socials__button socials__button--instagram" href="#"></a></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+  <script type="text/javascript" src="../common.js"></script><script type="text/javascript" src="../landing.js"></script></body>
+</html>

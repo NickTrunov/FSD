@@ -5,11 +5,6 @@
     display: none;
 }
 
-.footer-light--hidden {
-    padding: 0;
-}
-
-
 @media screen and (min-width: $middle-size) {
     .footer-light--hidden {
         display: none;

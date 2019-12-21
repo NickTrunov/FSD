@@ -1,16 +1,16 @@
 mixin footer-light(data)
-    footer.footer-light
-      include ../site-logo/site-logo.pug
-      .site-logo
-        +site-logo
-      .footer-light__content
-        if data.english
-          | Lorem ipsum dolor sit amet consectetur adipiscing elit
-          br
-          | aliquam eget nullam pellentesque aliquam curabitur cociis.
-        else
-          | Бронирование номеров в лучшем отеле 2019 года
-          br
-          |по версии ассоциации «Отельные взгляды»  
-      include ../socials/socials.pug 
-      +socials()
+  footer.footer-light
+    include ../site-logo/site-logo.pug
+    .site-logo
+      +site-logo
+    .footer-light__content
+      if data.english
+        | Lorem ipsum dolor sit amet consectetur adipiscing elit
+        br
+        | aliquam eget nullam pellentesque aliquam curabitur cociis.
+      else
+        | Бронирование номеров в лучшем отеле 2019 года
+        br
+        |по версии ассоциации «Отельные взгляды»  
+    include ../socials/socials.pug 
+    +socials()

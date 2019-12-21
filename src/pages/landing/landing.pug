@@ -1,0 +1,13 @@
+extends ../main-layout/main-layout
+
+block title
+  title Landing
+
+block content
+    block card
+      .landing
+        .landing__background
+            img(src="../img/landing-background.png")
+        .landing__room-config#dd
+          include ../../blocks/find-apartments-card/find-apartments-card.pug 
+          +apartments()

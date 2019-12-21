@@ -11,6 +11,7 @@ module.exports = {
         cards: './src/pages/cards/cards.js',
         formElements: './src/pages/form-elements/form-elements.js',
         headersFooters: './src/pages/headers-footers/headers-footers.js',
+        landing: './src/pages/landing/landing.js'
     },
     output: {
             path: path.resolve(__dirname, 'build')
@@ -75,6 +76,12 @@ module.exports = {
 			filename: 'pages/headers-footers.html',
 			template: './src/pages/headers-footers/headers-footers.pug',
 			chunks: ['common', 'headersFooters']
+        }),
+        
+        new HtmlWebpackPlugin({
+			filename: 'pages/landing.html',
+			template: './src/pages/landing/landing.pug',
+			chunks: ['common', 'landing']
 		}),
         
         new MiniCssExtractPlugin({
