@@ -1,0 +1,11 @@
+extends ../main-layout/main-layout
+
+block title
+  title Registration
+
+block content
+    include ../../blocks/background/background
+    +background({landing: false})
+    .card
+      include ../../blocks/register-card/register-card
+      +register-card()

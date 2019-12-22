@@ -1,6 +1,6 @@
 @import '../../scss/sizes.scss';
 
-.landing__room-config {
+.card {
     position: absolute;
     top: 140px;
     left: calc(50% - 380px / 2);
@@ -13,7 +13,7 @@
 
 @media screen and (min-width: $small-size) {
 
-    .landing__room-config {
+    .card {
             left: 140px;
         }
 }

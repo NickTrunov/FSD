@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Landing</title>
-  <link href="../css/common.css" rel="stylesheet"><link href="../css/landing.css" rel="stylesheet"></head>
+    <title>Registration</title>
+  <link href="../css/common.css" rel="stylesheet"><link href="../css/registration.css" rel="stylesheet"></head>
   <body>
         <header class="header">
           <div class="header__container">
@@ -41,30 +41,45 @@
             </div>
           </div>
         </header>
-        <div class="background">
-          <div class="background__text">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
-        </div>
+        <div class="background background--secondary"></div>
     <div class="card">
-            <div class="find-apartments-card">
+            <div class="register-card">
               <div class="card-canvas">
-                <h1>
-                   Найдём номера под<br>ваши пожелания</h1>
-                <div class="find-apartments-card__item find-apartments-card__item--primary">
-                              <div class="range-dates">
-                                <label class="range-dates__label range-dates__label--small">Прибытие<span class="range-dates__wrapper">
-                                    <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="first_date"></span></label>
-                                <label class="range-dates__label range-dates__label--small">Выезд<span class="range-dates__wrapper">
-                                    <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="second_date"></span></label>
+                <h1>Регистрация аккаунта</h1>
+                <div class="register-card__block">
+                  <input class="text-field register-card__item" placeholder="Имя">
+                  <input class="text-field register-card__item" placeholder="Фамилия">
+                              <label class="radio">Мужчина
+                                <input class="radio__input" type="radio" name="gender" checked>
+                                <div class="radio__mark"></div>
+                              </label>
+                              <label class="radio">Женщина
+                                <input class="radio__input" type="radio" name="gender">
+                                <div class="radio__mark"></div>
+                              </label>
+                </div>
+                <div class="register-card__block">
+                  <h3 class="register-card__label">Дата рождения</h3>
+                  <input class="text-field" placeholder="ДД.ММ.ГГГГ" id="date">
+                </div>
+                <div class="register-card__block">
+                  <h3 class="register-card__label">Данные для входа в сервис</h3>
+                  <input class="text-field register-card__item" placeholder="Email">
+                  <input class="text-field register-card__item" placeholder="Пароль">
+                              <label class="toggle">Получать спецпредложения
+                                <input class="toggle__input" type="checkbox">
+                                <div class="mark toggle__mark"></div>
+                              </label>
+                </div>
+                <div class="register-card__block register-card__block--button">
+                              <div class="long-button">Перейти к оплате<i class="long-button__icon">arrow_forward</i></div>
+                </div>
+                <div class="register-card__block register-card__block--last">
+                              <div class="card-footer">
+                                <div class="card-footer__left">Уже есть аккаунт на Toxin</div>
+                                <div class="card-footer__right"></div>
+                                <div class="rounded-button">Войти</div>
                               </div>
-                  <div class="calendar">
-                    <input type="text" id="calendar">
-                  </div>
-                </div>
-                <div class="find-apartments-card__item">
-                  <div id="dd"></div>
-                </div>
-                <div class="find-apartments-card__button">
-                              <div class="long-button">Подобрать номер<i class="long-button__icon">arrow_forward</i></div>
                 </div>
               </div>
             </div>
@@ -131,5 +146,5 @@
             </div>
           </div>
         </footer>
-  <script type="text/javascript" src="../common.js"></script><script type="text/javascript" src="../landing.js"></script></body>
+  <script type="text/javascript" src="../common.js"></script><script type="text/javascript" src="../registration.js"></script></body>
 </html>

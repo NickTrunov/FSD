@@ -4,9 +4,8 @@ block title
   title Landing
 
 block content
-  .landing
-    include ../../blocks/background/background
-    +background({landing: true})
-    .landing__room-config
-      include ../../blocks/find-apartments-card/find-apartments-card
-      +apartments()
+  include ../../blocks/background/background
+  +background({landing: true})
+  .card
+    include ../../blocks/find-apartments-card/find-apartments-card
+    +apartments()

@@ -11,7 +11,9 @@ module.exports = {
         cards: './src/pages/cards/cards.js',
         formElements: './src/pages/form-elements/form-elements.js',
         headersFooters: './src/pages/headers-footers/headers-footers.js',
-        landing: './src/pages/landing/landing.js'
+        landing: './src/pages/landing/landing.js',
+        signIn: './src/pages/sign-in/sign-in.js',
+        registration: './src/pages/registration/registration.js'
     },
     output: {
             path: path.resolve(__dirname, 'build')
@@ -82,6 +84,18 @@ module.exports = {
 			filename: 'pages/landing.html',
 			template: './src/pages/landing/landing.pug',
 			chunks: ['common', 'landing']
+        }),
+        
+        new HtmlWebpackPlugin({
+			filename: 'pages/sign-in.html',
+			template: './src/pages/sign-in/sign-in.pug',
+			chunks: ['common', 'signIn']
+        }),
+        
+        new HtmlWebpackPlugin({
+			filename: 'pages/registration.html',
+			template: './src/pages/registration/registration.pug',
+			chunks: ['common', 'registration']
 		}),
         
         new MiniCssExtractPlugin({

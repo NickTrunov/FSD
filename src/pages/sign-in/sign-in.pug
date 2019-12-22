@@ -1,0 +1,11 @@
+extends ../main-layout/main-layout
+
+block title
+  title Sign in
+
+block content
+    include ../../blocks/background/background
+    +background({landing: false})
+    .card
+      include ../../blocks/enter-card/enter-card
+      +enter-card()

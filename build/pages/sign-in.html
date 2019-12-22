@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Landing</title>
-  <link href="../css/common.css" rel="stylesheet"><link href="../css/landing.css" rel="stylesheet"></head>
+    <title>Sign in</title>
+  <link href="../css/common.css" rel="stylesheet"><link href="../css/signIn.css" rel="stylesheet"></head>
   <body>
         <header class="header">
           <div class="header__container">
@@ -41,30 +41,20 @@
             </div>
           </div>
         </header>
-        <div class="background">
-          <div class="background__text">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
-        </div>
+        <div class="background background--secondary"></div>
     <div class="card">
-            <div class="find-apartments-card">
+            <div class="enter-card">
               <div class="card-canvas">
-                <h1>
-                   Найдём номера под<br>ваши пожелания</h1>
-                <div class="find-apartments-card__item find-apartments-card__item--primary">
-                              <div class="range-dates">
-                                <label class="range-dates__label range-dates__label--small">Прибытие<span class="range-dates__wrapper">
-                                    <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="first_date"></span></label>
-                                <label class="range-dates__label range-dates__label--small">Выезд<span class="range-dates__wrapper">
-                                    <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="second_date"></span></label>
+                <h1 class="enter-card__title">Войти</h1>
+                <input class="text-field enter-card__field" type="text" placeholder="Email">
+                <input class="text-field" type="password" placeholder="Пароль">
+                <div class="long-button enter-card__enter-button">Войти<i class="long-button__icon">arrow_forward</i></div>
+                <div class="enter-card__footer">
+                              <div class="card-footer">
+                                <div class="card-footer__left">Нет аккаунта на Toxin?</div>
+                                <div class="card-footer__right"></div>
+                                <div class="rounded-button">Создать</div>
                               </div>
-                  <div class="calendar">
-                    <input type="text" id="calendar">
-                  </div>
-                </div>
-                <div class="find-apartments-card__item">
-                  <div id="dd"></div>
-                </div>
-                <div class="find-apartments-card__button">
-                              <div class="long-button">Подобрать номер<i class="long-button__icon">arrow_forward</i></div>
                 </div>
               </div>
             </div>
@@ -131,5 +121,5 @@
             </div>
           </div>
         </footer>
-  <script type="text/javascript" src="../common.js"></script><script type="text/javascript" src="../landing.js"></script></body>
+  <script type="text/javascript" src="../common.js"></script><script type="text/javascript" src="../signIn.js"></script></body>
 </html>
