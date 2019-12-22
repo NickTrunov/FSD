@@ -6,8 +6,7 @@
     font-family: 'Montserrat Bold';
     color: $purple;
     border-radius: 22px;
-    width: 95px;
-    padding: 8px 0;
+    padding: 8px 18px;
     text-align: center;
     text-transform: uppercase;
     font-size: .75rem;
@@ -17,8 +16,7 @@
     background-color: $white;
 
     &--small {
-        width: 75px;
-        padding: 3px 0;
+        padding: 3px 18px;
     }
 
     &::after {
