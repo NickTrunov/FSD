@@ -1,31 +1,10 @@
 @import '../../scss/sizes.scss';
 
-.landing {
-
-    &__background {
-        position: relative;
-        width: 100%;
-        height: calc(100vh - 70px);
-        background: url(../img/landing-background.png) 50% 50%;
-        background-size: cover;
-
-        &::after {
-            content: "Лучшие номера для вашей работы, отдыха и просто вдохновения";
-            display: block;
-            position: absolute;
-            right: 10%;
-            bottom: 18px;
-            width: 297px;
-            text-align: right;
-        }
-    }
-
-    &__room-config {
-        position: absolute;
-        top: 140px;
-        left: calc(50% - 380px / 2);
-        z-index: 1;
-    }
+.landing__room-config {
+    position: absolute;
+    top: 140px;
+    left: calc(50% - 380px / 2);
+    z-index: 1;
 }
 
 @media screen and (min-width: $middle-size) {
@@ -34,9 +13,7 @@
 
 @media screen and (min-width: $small-size) {
 
-    .landing {
-        &__room-config {
+    .landing__room-config {
             left: 140px;
         }
-    }
 }

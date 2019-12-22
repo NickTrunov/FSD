@@ -1,0 +1,19 @@
+.background {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: url(../img/landing-background.png) 50% 50%;
+    background-size: cover;
+
+    &--secondary {
+        background-image: url(../img/secondary-background.png);
+    }
+
+    &__text {
+        position: absolute;
+        right: 10%;
+        bottom: 18px;
+        width: 297px;
+        text-align: right;
+    }
+}
