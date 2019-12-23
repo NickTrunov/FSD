@@ -20,7 +20,7 @@
 
 .subscription{position:relative}.subscription::after{position:absolute;display:block;font-family:'Material Icons';top:0;right:0;font-size:1.5rem;line-height:1.96em;text-align:center;content:'\e5c8';width:2em;height:2em;color:#bc9cff}
 
-.text-field{color:rgba(31,32,65,0.25);border:1px solid rgba(31,32,65,0.25);border-radius:4px;font-size:.875rem;line-height:18px;padding-left:15px;padding-top:12px;padding-bottom:12px;width:100%}.text-field::placeholder{color:rgba(31,32,65,0.25)}.text-field:hover,.text-field:focus,.text-field--focus{border-color:rgba(31,32,65,0.5);color:rgba(31,32,65,0.75)}.text-field:hover::placeholder,.text-field:focus::placeholder,.text-field--focus::placeholder{color:rgba(31,32,65,0.75)}
+.text-field{color:rgba(31,32,65,0.75);border:1px solid rgba(31,32,65,0.25);border-radius:4px;font-size:.875rem;line-height:18px;padding-left:15px;padding-top:12px;padding-bottom:12px;width:100%;outline:none}.text-field::placeholder{color:rgba(31,32,65,0.25)}.text-field:hover,.text-field:focus,.text-field--focus{border-color:rgba(31,32,65,0.5)}.text-field:hover::placeholder,.text-field:focus::placeholder,.text-field--focus::placeholder{color:rgba(31,32,65,0.75)}
 
 .find-apartments-card{width:380px;height:374px}.find-apartments-card__item{position:relative;margin:20px 0;z-index:3}.find-apartments-card__item--primary{z-index:4}.find-apartments-card__button{margin-top:31px}
 
