@@ -8,6 +8,10 @@
     color: $purple;
     cursor: pointer;
 
+    &:hover {
+        color: $dark-shade-50;
+    }
+
     &--disabled {
         cursor: default;
         color: $dark-shade-50;

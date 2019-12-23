@@ -32,6 +32,10 @@
         background-image: $gradient;
     }
 
+    &:hover::after {
+        opacity: .5;
+    }
+
     &--disabled::after {
         opacity: .5;
     }

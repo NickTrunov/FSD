@@ -27,4 +27,8 @@
         line-height: 1;
         text-transform: none;
     }
+
+    &:hover {
+        opacity: .5;
+    }
 }
