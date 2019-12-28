@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Room</title>
+  <link href="../css/common.css" rel="stylesheet"><link href="../css/searchRoom.css" rel="stylesheet"></head>
+  <body>
+        <header class="header">
+          <div class="header__container">
+            <div class="header__logo">
+                      <div class="site-logo"><img src="../img/logo-color.svg">
+                        <div class="site-logo__name"><img src="../img/toxin.svg"></div>
+                      </div>
+            </div>
+            <div class="header__toggle">
+              <button class="menu-toggle" id="toggle"></button>
+            </div>
+            <div class="header__menu">
+                  <div class="menu" id="menu">
+                        <div class="menu__item"><a href="#about_us">О нас</a></div>
+                        <div class="menu__item menu__submenu">Услуги
+                          <div class="submenu">
+                                <div class="submenu__item"><a href="#first">Первая</a></div>
+                                <div class="submenu__item"><a href="#second">Вторая</a></div>
+                          </div>
+                        </div>
+                        <div class="menu__item"><a href="#careers">Вакансии</a></div>
+                        <div class="menu__item"><a href="#news">Новости</a></div>
+                        <div class="menu__item menu__submenu">Соглашения
+                          <div class="submenu">
+                                <div class="submenu__item"><a href="#first_doc">Первое</a></div>
+                                <div class="submenu__item"><a href="#second_doc">Второе</a></div>
+                          </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="header__enter-panel">
+              <div class="header__enter-button">
+                <div class="rounded-button rounded-button--small">Войти</div>
+              </div>
+              <div class="button button--small">Зарегистрироваться</div>
+            </div>
+          </div>
+        </header>
+    <div class="search-room">
+      <sidebar class="search-room__sidebar">
+        <form action="index.html" method="post">
+          <div class="search-room__sidebar-item">
+            <div id="calendar"> 
+                          <div class="range-dates">
+                            <label class="range-dates__label">Даты пребывания в отеле<span class="range-dates__wrapper">
+                                <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" value="19 авг - 23 авг"></span></label>
+                          </div>
+            </div>
+          </div>
+          <div class="search-room__sidebar-item">
+            <div class="search-room--index-100" id="guests"></div>
+          </div>
+          <div class="search-room__sidebar-item">
+            <h3 class="search-room__sidebar-item-title">Диапазон цены</h3>
+            <div class="search-room__slider">
+              <input class="slider">
+              <div>Стоимость за сутки пребывания в номере</div>
+            </div>
+          </div>
+          <div class="search-room__sidebar-item">
+            <h3 class="search-room__sidebar-item-title">checkbox buttons</h3>
+                      <label class="checkbox">Можно курить
+                        <input class="checkbox__input" type="checkbox">
+                        <div class="checkbox__mark"></div>
+                      </label>
+                      <label class="checkbox">Можно с питомцами
+                        <input class="checkbox__input" type="checkbox" checked>
+                        <div class="checkbox__mark"></div>
+                      </label>
+                      <label class="checkbox">Можно пригласить гостей (до 10 человек)
+                        <input class="checkbox__input" type="checkbox" checked>
+                        <div class="checkbox__mark"></div>
+                      </label>
+          </div>
+          <div class="search-room__sidebar-item">
+            <h3 class="search-room__sidebar-item-title">Доступность</h3>
+                      <label class="checkbox checkbox--bold">Широкий коридор
+                        <input class="checkbox__input" type="checkbox">
+                        <div class="checkbox__mark"></div>
+                        <div class="checkbox__description">Ширина коридоров в номере не менее 91 см.</div>
+                      </label>
+                      <label class="checkbox checkbox--bold">Помощник для инвалидов
+                        <input class="checkbox__input" type="checkbox">
+                        <div class="checkbox__mark"></div>
+                        <div class="checkbox__description">На 1 этаже вас встретит специалист и проводит до номера.</div>
+                      </label>
+          </div>
+          <div class="search-room__sidebar-item">
+            <div class="search-room--index-100" id="features"></div>
+          </div>
+          <div class="search-room__sidebar-item">
+                        <div class="expander">
+                          <div class="expander__header" id="expander-header">Дополнительные удобства</div>
+                          <div class="expander__list expander__list--hide" id="expander-list">
+                                            <label class="checkbox">Завтрак
+                                              <input class="checkbox__input" type="checkbox">
+                                              <div class="checkbox__mark"></div>
+                                            </label>
+                                            <label class="checkbox">Письменный стол
+                                              <input class="checkbox__input" type="checkbox" checked>
+                                              <div class="checkbox__mark"></div>
+                                            </label>
+                                            <label class="checkbox">Стул для кормления
+                                              <input class="checkbox__input" type="checkbox" checked>
+                                              <div class="checkbox__mark"></div>
+                                            </label>
+                                            <label class="checkbox">Кроватка
+                                              <input class="checkbox__input" type="checkbox" checked>
+                                              <div class="checkbox__mark"></div>
+                                            </label>
+                                            <label class="checkbox">Телевизор
+                                              <input class="checkbox__input" type="checkbox">
+                                              <div class="checkbox__mark"></div>
+                                            </label>
+                                            <label class="checkbox">Шампунь
+                                              <input class="checkbox__input" type="checkbox">
+                                              <div class="checkbox__mark"></div>
+                                            </label>
+                                            <label class="checkbox">Телевизор
+                                              <input class="checkbox__input" type="checkbox">
+                                              <div class="checkbox__mark"></div>
+                                            </label>
+                                            <label class="checkbox">Шампунь
+                                              <input class="checkbox__input" type="checkbox">
+                                              <div class="checkbox__mark"></div>
+                                            </label>
+                          </div>
+                        </div>
+          </div>
+        </form>
+      </sidebar>
+      <div class="search-room__content">
+        <h2 class="search-room__header">Номера, которые мы для вас подобрали</h2>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_1.png">
+                                  <div class="gallery__arrow gallery__arrow--left">keyboard_arrow_left</div>
+                                  <div class="gallery__arrow gallery__arrow--right">keyboard_arrow_left</div>
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">888</h2><span class="apartment-info--lux"> Люкс</span>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">9 990&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 145 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_2.png">
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">840</h2><span class="apartment-info--lux"> Люкс</span>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">9 900&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 65 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_3.png">
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">980</h2><span class="apartment-info--lux"> Люкс</span>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">8 500&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i><i class="rating__icon">star_border</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 35 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_4.png">
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">856</h2>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">7 300&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 19 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_5.png">
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">740</h2>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">6 000&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 44 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_6.png">
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">982</h2>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">5 800&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i><i class="rating__icon">star_border</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 56 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_7.png">
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">678</h2>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">5 500&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 45 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_8.png">
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">450</h2>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">5 300&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 39 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_9.png">
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">350</h2>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">5 000&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i><i class="rating__icon">star_border</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 77 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_10.png">
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">666</h2>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">5 000&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 25 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_11.png">
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">444</h2>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">5 000&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i><i class="rating__icon">star_border</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 15 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__room-card">
+                  <div class="image-card">
+                              <div class="gallery">
+                                <div class="gallery__image"><img src="../img/apartments_12.png">
+                                  <div class="gallery__point-container">
+                                    <div class="gallery__point gallery__point--fill"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                    <div class="gallery__point"></div>
+                                  </div>
+                                </div>
+                              </div>
+                    <div class="image-card__row">
+                                  <div class="apartment-info"><span class="apartment-info--bold">№ </span>
+                                    <h2 class="apartment-info--main">352</h2>
+                                  </div>
+                      <div class="image-card__item">
+                                      <div class="price"><span class="price--bold">5 000&#8381; </span><span class="price--small">в сутки</span></div>
+                      </div>
+                    </div>
+                    <div class="image-card__row image-card__row--bottom">
+                                  <div class="rating"><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star</i><i class="rating__icon">star_border</i><i class="rating__icon">star_border</i>
+                                  </div>
+                      <div class="image-card__item">
+                        <div class="image-card__item--bold"> 55 </div><span>Отзывов</span>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <div class="search-room__pagination">
+                    <div class="pagination"><a class="pagination__item pagination__item--active" href="#">1</a><a class="pagination__item" href="#">2</a><a class="pagination__item" href="#">3</a><a class="pagination__item">...</a><a class="pagination__item" href="#">15</a><a class="pagination__next"></a>
+                      <div class="pagination__info">1 &ndash; 12 из 100+ вариантов аренды</div>
+                    </div>
+        </div>
+      </div>
+    </div>
+        <div class="footer-light--hidden">
+              <footer class="footer-light">
+                <div class="site-logo">
+                        <div class="site-logo"><img src="../img/logo-color.svg">
+                          <div class="site-logo__name"><img src="../img/toxin.svg"></div>
+                        </div>
+                </div>
+                <div class="footer-light__content">Бронирование номеров в лучшем отеле 2019 года<br>по версии ассоциации «Отельные взгляды»  
+                </div>
+                      <div class="socials"><a class="socials__button socials__button--twitter" href="#"></a><a class="socials__button socials__button--fb" href="#"></a><a class="socials__button socials__button--instagram" href="#"></a></div>
+              </footer>
+        </div>
+        <footer class="footer">
+          <div class="footer__container">
+            <div class="footer__block">
+              <div class="site-logo">
+                          <div class="site-logo"><img src="../img/logo-color.svg">
+                            <div class="site-logo__name"><img src="../img/toxin.svg"></div>
+                          </div>
+              </div>
+              <div class="footer__description">
+                <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+              </div>
+            </div>
+            <div class="footer__nav">
+              <div class="footer__block__header">
+                <h3>Навигация</h3>
+              </div>
+              <p><a class="footer__link" href="#">О нас</a><a class="footer__link" href="#">Новости</a><a class="footer__link" href="#">Служба поддержки</a><a class="footer__link" href="#">Услуги</a></p>
+            </div>
+            <div class="footer__nav">
+              <div class="footer__block__header">
+                <h3>О нас</h3>
+              </div>
+              <p><a class="footer__link" href="#">О сервисе</a><a class="footer__link" href="#">Наша команда</a><a class="footer__link" href="#">Вакансии</a><a class="footer__link" href="#">Инвесторы</a></p>
+            </div>
+            <div class="footer__nav">
+              <div class="footer__block__header">
+                <h3>Служба поддержки</h3>
+              </div>
+              <p><a class="footer__link" href="#">Соглашения</a><a class="footer__link" href="#">Сообщества</a><a class="footer__link" href="#">Связь с нами</a></p>
+            </div>
+            <div class="footer__block">
+              <div class="footer__block__header footer__block__header--last">
+                <h3>Подписка</h3>
+              </div>
+              <p>Получайте специальные предложения и новости сервиса</p>
+              <div class="subscription">
+                <div class="subscription__item"></div>
+                <input class="text-field" placeholder="Email">
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copy">
+              <p>Copyright © 2018 Toxin отель. Все права зачищены.</p>
+              <div class="footer__socials">
+                          <div class="socials"><a class="socials__button socials__button--twitter" href="#"></a><a class="socials__button socials__button--fb" href="#"></a><a class="socials__button socials__button--instagram" href="#"></a></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+  <script type="text/javascript" src="../common.js"></script><script type="text/javascript" src="../searchRoom.js"></script></body>
+</html>

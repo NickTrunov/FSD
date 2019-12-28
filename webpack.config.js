@@ -13,7 +13,8 @@ module.exports = {
         headersFooters: './src/pages/headers-footers/headers-footers.js',
         landing: './src/pages/landing/landing.js',
         signIn: './src/pages/sign-in/sign-in.js',
-        registration: './src/pages/registration/registration.js'
+        registration: './src/pages/registration/registration.js',
+        searchRoom: './src/pages/search-room/search-room.js'
     },
     output: {
             path: path.resolve(__dirname, 'build')
@@ -98,6 +99,12 @@ module.exports = {
 			chunks: ['common', 'registration']
 		}),
         
+        new HtmlWebpackPlugin({
+			filename: 'pages/search-room.html',
+			template: './src/pages/search-room/search-room.pug',
+			chunks: ['common', 'searchRoom']
+		}),
+        
         new MiniCssExtractPlugin({
 			filename: 'css/[name].css',
 			chunkFilename: '[id].css'
@@ -113,12 +120,14 @@ module.exports = {
 				to: './fonts'
             },
         ]),
+
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
         }),
     ],
+    
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
 		overlay: true,
