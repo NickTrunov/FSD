@@ -1,0 +1,1 @@
+import './gallery-room.scss';
