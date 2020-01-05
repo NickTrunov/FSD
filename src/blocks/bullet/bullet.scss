@@ -8,12 +8,13 @@
     margin-block-end: 0;
     margin-inline-end: 0;
     list-style-position: inside;
-    width: 260px;
+    width: 320px;
 
     & li {
         position: relative;
         padding-left: 21px;
         padding-bottom: 10px;
+        width: 260px;
 
         &::before {
             content: '';
