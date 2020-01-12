@@ -6,6 +6,7 @@
     height: 70px;
     position: relative;
     box-shadow: 0px 10px 20px $dark-shade-5;
+    background-color: #fff;
 
     &__container {
         display: flex;
@@ -29,6 +30,7 @@
     &__enter-panel {
         display: flex;
         justify-content: space-between;
+        z-index: 1;
     }
 
     &__enter-button {
