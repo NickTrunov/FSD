@@ -11,7 +11,7 @@ Calendar({
 })
 
 
-$('#dd').dropdown({
+$('#apartments_dropdown').dropdown({
     title: 'Гости',
     placeholder: 'Сколько гостей',
     singular: true,

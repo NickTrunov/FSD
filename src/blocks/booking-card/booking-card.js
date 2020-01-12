@@ -13,7 +13,7 @@ Calendar({
     inputs: $('#first_booking_date,#second_booking_date')
 })
 
-$('#dd').dropdown({
+$('#booking_dropdown').dropdown({
     title: 'Гости',
     placeholder: '3 гостя',
     singular: true,
