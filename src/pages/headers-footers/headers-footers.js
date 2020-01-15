@@ -1,9 +1,0 @@
-import './headers-footers.scss';
-import '../../blocks/logo/logo';
-import '../../blocks/site-logo/site-logo';
-import '../../blocks/header/header';
-import '../../blocks/menu/menu';
-import '../../blocks/menu-toggle/menu-toggle';
-import '../../blocks/button/button';
-import '../../blocks/rounded-button/rounded-button';
-import '../../blocks/footer-light/footer-light';

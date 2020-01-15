@@ -1,18 +1,15 @@
-import './calendar.scss';
 import 'air-datepicker/dist/js/datepicker';
 
-export default function makeCalendar(data) {
+$('.js-calendar').each(function() {
+    let inputs = $(this).parent().find('input').not('.js-hidden');
+    
     let dates;
 
     const options = {
         range: true,
+        multipleDates: true,
         onSelect: (formattedDate, date, inst) => {
-            if (date.length > 1) {
-                dates = [];
-                dates.push(date[0].toLocaleDateString())
-                dates.push(date[1].toLocaleDateString());
-                
-            }
+            dates = date;
         },
         prevHtml: '<i class="material-icons">arrow_back</i>',
         nextHtml: '<i class="material-icons">arrow_forward</i>',
@@ -21,35 +18,33 @@ export default function makeCalendar(data) {
         },
     };
 
-    let datepicker = data.container.datepicker(options).data('datepicker');
+    let datepicker = $(this).datepicker(options).data('datepicker');
 
-    data.inputs.click( () => {
-        datepicker.show();
+    let clearButton = $('<span class="simple-button simple-button--disabled">Очистить</span>');
+    let applyButton = $('<span class="simple-button">Применить</span></div>');
+    let btnContainer = $('<div class="datepicker--btn-container">')
+        .append(clearButton)
+        .append(applyButton);
+        
+    $(datepicker.$datepicker).append(btnContainer);
+
+    clearButton.click(() => {
+        inputs.each(function () {
+            this.value = '';
+        });
+
+        datepicker.clear();
     });
 
-    $('.datepicker').each(function() {
-        if ($(this).find('.datepicker--btn-container').length === 0) {
-            let clearButton = $('<span class="simple-button simple-button--disabled">Очистить</span>');
-            let applyButton = $('<span class="simple-button">Применить</span></div>');
-            let btnContainer = $('<div class="datepicker--btn-container">').append(clearButton).append(applyButton);
-            $(this).append(btnContainer);
+    applyButton.click(() => {
+        inputs.each((i, el) => {
+            $(el).val(dates[i].toLocaleDateString());
+        });
+        
+        datepicker.hide();
+    });    
 
-            clearButton.click(() => {
-                dates = null;
-                datepicker.clear();
-                data.inputs.val('');
-            });
-
-            applyButton.click(() => {
-                if (dates.length > 1) {
-                    if (data.inputs.length > 1) {
-                        $(data.inputs[0]).val(dates[0]);
-                        $(data.inputs[1]).val(dates[1]);
-                    } else {
-                    }
-                }
-                datepicker.hide();
-            });
-        }
-    });  
-}
+    inputs.click(() => {
+        datepicker.show();
+    });
+});

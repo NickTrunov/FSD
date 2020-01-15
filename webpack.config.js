@@ -85,8 +85,7 @@ module.exports = {
         
         new HtmlWebpackPlugin({
 			filename: 'pages/search-room.html',
-			template: './src/pages/search-room/search-room.pug',
-			chunks: ['common', 'searchRoom']
+			template: './src/pages/search-room/search-room.pug'
 		}),
         
         new HtmlWebpackPlugin({

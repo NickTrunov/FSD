@@ -13,14 +13,12 @@
                            Найдём номера под<br>ваши пожелания</h1>
                         <div class="find-apartments-card__item find-apartments-card__item--primary">
                                           <div class="range-dates">
+                                            <input class="js-calendar js-hidden calendar">
                                             <label class="range-dates__label range-dates__label--small">Прибытие<span class="range-dates__wrapper">
                                                 <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="first_date"></span></label>
                                             <label class="range-dates__label range-dates__label--small">Выезд<span class="range-dates__wrapper">
                                                 <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="second_date"></span></label>
                                           </div>
-                          <div class="calendar">
-                            <input type="text" id="calendar">
-                          </div>
                         </div>
                         <div class="find-apartments-card__item">
                           <div id="apartments_dropdown"></div>
@@ -86,14 +84,12 @@
                         </div>
                         <div class="booking-card__item booking-card__item--up">
                                           <div class="range-dates">
+                                            <input class="js-calendar js-hidden calendar">
                                             <label class="range-dates__label range-dates__label--small">Прибытие<span class="range-dates__wrapper">
                                                 <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="first_booking_date"></span></label>
                                             <label class="range-dates__label range-dates__label--small">Выезд<span class="range-dates__wrapper">
                                                 <input class="range-dates__date-dropdown" placeholder="ДД.ММ.ГГГГ" id="second_booking_date"></span></label>
                                           </div>
-                          <div class="calendar">
-                            <input type="text" id="booking_calendar">
-                          </div>
                         </div>
                         <div class="booking-card__item booking-card__item--middle">
                           <div id="booking_dropdown"></div>
@@ -145,7 +141,7 @@
       </div>
       <div class="cards__column">
         <div class="cards__item">
-          <div id="static_calendar"></div>
+          <div class="js-calendar"></div>
         </div>
         <div class="cards__item">
                     <div class="image-card">

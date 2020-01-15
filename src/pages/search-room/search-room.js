@@ -1,13 +1,3 @@
-import './search-room.scss';
-import '../main-layout/main-layout';
-import '../../blocks/image-card/image-card';
-import '../../blocks/pagination/pagination';
-import '../../blocks/configuration-dropdown/configuration-dropdown';
-import '../../blocks/checkbox/checkbox';
-import '../../blocks/expander/expander';
-import '../../blocks/range-dates/range-dates';
-import '../../blocks/calendar/calendar';
-
 $('#guests').dropdown({
     title: 'гости',
     show: false,

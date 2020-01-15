@@ -1,27 +1,3 @@
-import './form-elements.scss';
-import '../../blocks/logo/logo';
-import '../../blocks/text-field/text-field';
-import '../../blocks/configuration-dropdown/configuration-dropdown';
-import 'jquery.maskedinput/src/jquery.maskedinput';
-import '../../blocks/comment/comment';
-import '../../blocks/expander/expander';
-import '../../blocks/feature/feature';
-import '../../blocks/checkbox/checkbox';
-import '../../blocks/radio/radio';
-import '../../blocks/pagination/pagination';
-import '../../blocks/toggle/toggle';
-import '../../blocks/like/like';
-import '../../blocks/rating/rating';
-import '../../blocks/range-dates/range-dates';
-import '../../blocks/subscription/subscription';
-import '../../blocks/button/button';
-import '../../blocks/simple-button/simple-button';
-import '../../blocks/long-button/long-button';
-import '../../blocks/rounded-button/rounded-button';
-import '../../blocks/bullet/bullet';
-
-$('#birthday').mask('99.99.9999');
-
 $('#dd').dropdown({
     title: '',
     placeholder: '2 спальни, 2 кровати...',
