@@ -1,19 +1,15 @@
 @import '../../scss/sizes.scss';
 
-.card {
+.landing-card {
     position: absolute;
     top: 140px;
     left: calc(50% - 380px / 2);
     z-index: 1;
 }
 
-@media screen and (min-width: $middle-size) {
-
-}
-
 @media screen and (min-width: $small-size) {
 
-    .card {
+    .landing-card {
             left: 140px;
         }
 }
