@@ -79,5 +79,24 @@
 
   &__title {
     margin-bottom: 20px;
+    white-space: nowrap;
+  }
+
+  &__donut {
+    width: 280px;
+    height: 200px;
+    position: relative;
+    
+    .donut {
+      position: absolute;
+      top: 30px;
+      left: -15px;
+    }
+
+    .bullet {
+      position: absolute;
+      top: 70px;
+      left: 150px;
+    }
   }
 }

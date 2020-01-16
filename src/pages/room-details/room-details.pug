@@ -33,9 +33,14 @@ block content
           icon: 'whatshot',
           noBorder: true
         })
-      .room-details__room-item
+      .room-details__room-item.room-details__donut
         h2.room-details__title Впечатления от номера
-        // add donut
+        .donut.js-donut(data-donut='[{"value": 65, "color": "#BC9CFF"}, {"value": 65, "color": "#6FCF97"}, {"value": 130, "color": "#FFE39C"}]')
+        ul.bullet
+          li.bullet--excellent.bullet--small Великолепно
+          li.bullet--good.bullet--small Хорошо
+          li.bullet--normal.bullet--small Удовлетворительно
+          li.bullet--bad.bullet--small Разочарован
       .room-details__room-comments
         h2.room-details__title Отзывы посетителей номера
         include ../../blocks/comment/comment 
