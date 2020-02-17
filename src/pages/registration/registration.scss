@@ -1,6 +1,25 @@
-.card {
+.card--registration {
     position: absolute;
-    top: calc(50vh - 646px / 2 + 35px);
-    left: calc(50% - 380px / 2);
+    top: calc(50vh - 0.9*646px / 2 + 35px);
+    left: calc(50% - 0.9*380px / 2);
     z-index: 1;
+
+    @media screen and (min-height: 500px) {
+        .register-card {
+            zoom: 0.9;
+        }      
+    }
+
+    @media screen and (min-height: 800px) {
+        .register-card {
+            zoom: 1;
+        }      
+    }
+}
+
+@media screen and (min-height: 800px) {
+    .card--registration {
+        top: calc(50vh - 646px / 2 + 35px);
+        left: calc(50% - 380px / 2);
+    }      
 }

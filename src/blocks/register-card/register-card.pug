@@ -10,7 +10,7 @@ mixin register-card()
             +radio('Женщина', 'gender')
           .register-card__block
             h3.register-card__label Дата рождения
-            input.text-field(placeholder="ДД.ММ.ГГГГ")#date
+            input.text-field(placeholder="ДД.ММ.ГГГГ").js-masked
           .register-card__block
             h3.register-card__label Данные для входа в сервис
             input.text-field(placeholder="Email").register-card__item
